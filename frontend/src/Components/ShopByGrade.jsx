@@ -72,12 +72,7 @@ const ShopByGrade = () => {
             className="bg-#fdebe7 rounded-xl shadow-md overflow-hidden py-16 px-6"
         >
             <div>
-                <div className="flex justify-between items-center ">
-                    <h1 className="text-2xl">Shop by Grade</h1>
-                    <a href="#" className="text-md text-red-900 font-bold">
-                        View All
-                    </a>
-                </div>
+                <h1 className="text-2xl">Shop by Grade</h1>
                 <div className="grid grid-cols-2 space-y-4 gap-4">
                     {grades.map((grade, index) => (
                         <div
