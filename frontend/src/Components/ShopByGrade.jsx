@@ -14,7 +14,6 @@ import {
     MdTrendingUp,
 } from "react-icons/md";
 
-
 const ShopByGrade = () => {
     const grades = [
         {
@@ -80,7 +79,10 @@ const ShopByGrade = () => {
     ];
 
     return (
-        <div id="grades" className="bg-gray-100 overflow-hidden py-16 px-6">
+        <div
+            id="grades"
+            className="bg-gray-100 overflow-hidden min-h-screen py-16 px-6 lg:pt-32"
+        >
             <div>
                 {/* Desktop Menu */}
                 <div className="hidden md:flex flex-col">

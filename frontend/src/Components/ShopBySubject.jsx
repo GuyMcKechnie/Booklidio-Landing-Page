@@ -1,7 +1,15 @@
 import React from "react";
 import { CCarousel, CCarouselItem } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
-import { MdFunctions, MdScience, MdBrush } from "react-icons/md";
+import "tailwindcss/tailwind.css";
+import {
+    MdFunctions,
+    MdScience,
+    MdBrush,
+    MdHistory,
+    MdMap,
+} from "react-icons/md";
+import { LuDrama } from "react-icons/lu";
 import { TbWritingSign } from "react-icons/tb";
 
 const ShopBySubject = () => {
@@ -26,21 +34,54 @@ const ShopBySubject = () => {
             icon: <MdBrush size={180} />,
             href: "shop/art",
         },
+        {
+            subject: "Geography",
+            icon: <MdMap size={180} />,
+            href: "shop/geography",
+        },
+        {
+            subject: "Drama",
+            icon: <LuDrama size={180} />,
+            href: "shop/drama",
+        },
+        {
+            subject: "English",
+            icon: <TbWritingSign size={180} />,
+            href: "shop/english",
+        },
+        {
+            subject: "Art",
+            icon: <MdBrush size={180} />,
+            href: "shop/art",
+        },
+        {
+            subject: "Geography",
+            icon: <MdMap size={180} />,
+            href: "shop/geography",
+        },
+        {
+            subject: "Drama",
+            icon: <LuDrama size={180} />,
+            href: "shop/drama",
+        },
     ];
 
     return (
-        <div id="grades" className="bg-white overflow-hidden py-16 px-6">
+        <div
+            id="grades"
+            className="bg-white overflow-hidden min-h-screen py-16 px-6"
+        >
             <div>
                 {/* Desktop Menu */}
                 <div className="hidden md:flex flex-col">
                     <h1 className="text-3xl pb-6 text-zinc-800 font-md">
                         Shop by Subject
                     </h1>
-                    <div className="grid grid-cols-6  gap-4">
+                    <div className="grid grid-cols-5  gap-4">
                         {subjects.map((subject, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col items-center justify-between bg-white rounded-lg shadow-md p-4 transition duration-300ms ease-in-out hover:scale-105"
+                                className="flex flex-col items-center justify-between bg-white rounded-lg shadow-md p-4 transition duration-300ms ease-in-out hover:scale-105 min-h-full"
                             >
                                 <a href={subject.href} className="">
                                     <div className="text-red-900">
@@ -55,11 +96,11 @@ const ShopBySubject = () => {
                     </div>
                 </div>
                 {/* Mobile Menu */}
-                <div>
+                <div className="md:hidden">
                     <h1 className="text-3xl pb-6 text-zinc-800 font-md">
                         Shop by Subject
                     </h1>
-                    <CCarousel caption className="md:hidden">
+                    <CCarousel caption>
                         {subjects.map((subject, index) => (
                             <CCarouselItem key={index}>
                                 <div className="flex flex-col justify-center items-center">

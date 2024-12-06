@@ -38,7 +38,6 @@ function Navbar() {
 
                     {/* Desktop Menu */}
                     <SearchBar />
-
                     <div className="hidden md:flex items-center justify-between">
                         {navbar_items.map((item) => (
                             <a
