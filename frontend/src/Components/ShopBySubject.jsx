@@ -1,38 +1,35 @@
-import React, { useState } from "react";
-import {
-    CCarousel,
-    CCarouselItem,
-    CCarouselCaption,
-    CImage,
-} from "@coreui/react";
-import { MdFunctions, MdScience, MdTextsms, MdBrush } from "react-icons/md";
+import React from "react";
+import { CCarousel, CCarouselItem } from "@coreui/react";
+import "@coreui/coreui/dist/css/coreui.min.css";
+import { MdFunctions, MdScience, MdBrush } from "react-icons/md";
+import { TbWritingSign } from "react-icons/tb";
 
 const ShopBySubject = () => {
     const subjects = [
         {
-            grade: "Mathematics",
-            icon: <MdFunctions size={120} />,
+            subject: "Mathematics",
+            icon: <MdFunctions size={180} />,
             href: "shop/mathematics",
         },
         {
-            grade: "Science",
-            icon: <MdScience size={120} />,
+            subject: "Science",
+            icon: <MdScience size={180} />,
             href: "shop/science",
         },
         {
-            grade: "English",
-            icon: <MdTextsms size={120} />,
+            subject: "English",
+            icon: <TbWritingSign size={180} />,
             href: "shop/english",
         },
         {
-            grade: "Art",
+            subject: "Art",
             icon: <MdBrush size={180} />,
             href: "shop/art",
         },
     ];
 
     return (
-        <div id="grades" className="bg-gray-100 overflow-hidden py-16 px-6">
+        <div id="grades" className="bg-white overflow-hidden py-16 px-6">
             <div>
                 {/* Desktop Menu */}
                 <div className="hidden md:flex flex-col">
@@ -50,7 +47,7 @@ const ShopBySubject = () => {
                                         {subject.icon}
                                     </div>
                                     <h1 className="text-2xl text-zinc-700 font-bold text-center">
-                                        {subject.grade}
+                                        {subject.subject}
                                     </h1>
                                 </a>
                             </div>
@@ -58,20 +55,26 @@ const ShopBySubject = () => {
                     </div>
                 </div>
                 {/* Mobile Menu */}
-                <div className="block md:hidden">
-                    <CCarousel controls>
-                        <CCarouselItem>
-                            <MdFunctions size={100} />
-                        </CCarouselItem>
-                        <CCarouselItem>
-                            <MdScience />
-                        </CCarouselItem>
-                        <CCarouselItem>
-                            <MdTextsms />
-                        </CCarouselItem>
-                        <CCarouselItem>
-                            <MdBrush />
-                        </CCarouselItem>
+                <div>
+                    <h1 className="text-3xl pb-6 text-zinc-800 font-md">
+                        Shop by Subject
+                    </h1>
+                    <CCarousel caption className="md:hidden">
+                        {subjects.map((subject, index) => (
+                            <CCarouselItem key={index}>
+                                <div className="flex flex-col justify-center items-center">
+                                    <a
+                                        href={subject.href}
+                                        className="text-red-900"
+                                    >
+                                        {subject.icon}
+                                    </a>
+                                    <h1 className="text-zinc-700 text-3xl">
+                                        {subject.subject}
+                                    </h1>
+                                </div>
+                            </CCarouselItem>
+                        ))}
                     </CCarousel>
                 </div>
             </div>

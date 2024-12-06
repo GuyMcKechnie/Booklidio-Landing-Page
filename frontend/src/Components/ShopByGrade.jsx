@@ -14,6 +14,7 @@ import {
     MdTrendingUp,
 } from "react-icons/md";
 
+
 const ShopByGrade = () => {
     const grades = [
         {
@@ -108,7 +109,9 @@ const ShopByGrade = () => {
                 <div className="block md:hidden">
                     <div className="flex flex-row justify-between items-center pb-6">
                         <h1 className="text-2xl">Shop by Grade</h1>
-                        <a href="/shop">View All</a>
+                        <a className="text-red-900 no-underline" href="/shop">
+                            View All
+                        </a>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                         {grades.slice(0, 4).map((grade, index) => (
@@ -116,9 +119,7 @@ const ShopByGrade = () => {
                                 key={index}
                                 className="flex flex-col items-center justify-between bg-white rounded-lg shadow-md md:col-span-2"
                             >
-                                <div className="text-red-900">
-                                    {grade.icon}
-                                </div>
+                                <div className="text-red-900">{grade.icon}</div>
                                 <h1 className="text-2xl text-gray-600 font-bold">
                                     {grade.grade}
                                 </h1>

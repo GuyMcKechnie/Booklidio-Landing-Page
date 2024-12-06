@@ -75,7 +75,7 @@ function Navbar() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-zinc-800 hover:text-[#680d28] block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-zinc-800 hover:text-[#680d28] block px-3 py-2 rounded-md text-base font-medium no-underline"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}
