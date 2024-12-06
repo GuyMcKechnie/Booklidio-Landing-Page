@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 const Footer = () => {
     const footer_items = [
         {
@@ -73,7 +73,12 @@ const Footer = () => {
                 <div className="md:hidden grid grid-cols-2 gap-2">
                     {footer_items.map((item, index) => (
                         <div key={index}>
-                            <a href={item.href} className="text-base text-white no-underline">{item.title}</a>
+                            <a
+                                href={item.href}
+                                className="text-base text-white no-underline"
+                            >
+                                {item.title}
+                            </a>
                         </div>
                     ))}
                 </div>

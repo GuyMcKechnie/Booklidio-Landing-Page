@@ -1,14 +1,8 @@
-import React from "react";
+import * as React from "react";
 import { CCarousel, CCarouselItem } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "tailwindcss/tailwind.css";
-import {
-    MdFunctions,
-    MdScience,
-    MdBrush,
-    MdHistory,
-    MdMap,
-} from "react-icons/md";
+import { MdFunctions, MdScience, MdBrush, MdMap } from "react-icons/md";
 import { LuDrama } from "react-icons/lu";
 import { TbWritingSign } from "react-icons/tb";
 

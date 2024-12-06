@@ -1,7 +1,6 @@
 import * as React from "react";
-import { FaShoppingCart } from "react-icons/fa";
 
-const Hero = () => {
+const HowItWorks = () => {
     return (
         <div
             id="hero-container"
@@ -44,4 +43,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default HowItWorks;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaBook, FaTimes, FaUser } from "react-icons/fa";
-import SearchBar from "./SearchBar";
+import SearchBar from "./search-bar.jsx";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

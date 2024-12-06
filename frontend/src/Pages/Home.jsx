@@ -1,13 +1,13 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
-import Hero from "../Components/Hero";
-import ShopByGrade from "../Components/ShopByGrade";
-import ShopBySubject from "../Components/ShopBySubject";
-import Footer from "../Components/Footer";
+import * as React from "react";
+import Navbar from "../Components/navbar.jsx";
+import Hero from "../Components/hero.jsx";
+import ShopByGrade from "../Components/shop-by-grade.jsx";
+import ShopBySubject from "../Components/shop-by-subject.jsx";
+import Footer from "../Components/footer.jsx";
 
 function Home() {
     return (
-        <div className="home-page">
+        <div id="home-page">
             <Navbar />
             <Hero />
             <ShopByGrade />
