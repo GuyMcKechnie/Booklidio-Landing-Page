@@ -26,12 +26,6 @@ const Footer = () => {
             href: "account",
         },
         {
-            title: "Returns",
-            href: "returns",
-        },
-    ];
-    const policies = [
-        {
             title: "Terms of Service",
             href: "terms-of-service",
         },
@@ -45,37 +39,45 @@ const Footer = () => {
         },
     ];
     return (
-        <div>
+        <div className="">
             <div
-                id="top-footer"
-                className="grid grid-cols-2 justify-center items-center bg-[#680d28] py-6 px-12 text-white text-xl gap-4"
+                id="footer"
+                className="flex flex-col px-6 space-y-4 bg-red-900 text-white pb-12 pt-6 pb-6 lg:pb-6 lg:pt-12"
             >
-                {footer_items.map((item, index) => (
-                    <a key={index} href={item.href}>
-                        {item.title}
-                    </a>
-                ))}
-            </div>
-            <div
-                id="bottom-footer"
-                className="flex flex-col px-6 space-y-4 bg-[#441122] text-white pb-12 pt-6"
-            >
-                <div className="flex items-center justify-center text-xl mb-4">
-                    <h2>
-                        Already a customer?{" "}
-                        <a href="#sign-in" className="font-bold">
-                            Sign in
-                        </a>
-                    </h2>
+                {/* Desktop */}
+                <div className="hidden lg:flex lg:flex-row lg:justify-around lg:items-center">
+                    <div className="grid lg:flex lg:flex-col lg:gap-1">
+                        {footer_items.slice(0, 4).map((policy, index) => (
+                            <a
+                                key={index}
+                                href={policy.href}
+                                className="hover:scale-105 transition duration-300ms ease-in-out"
+                            >
+                                {policy.title}
+                            </a>
+                        ))}
+                    </div>
+                    <div className="grid lg:flex lg:flex-col lg:gap-1">
+                        {footer_items.slice(5, 9).map((policy, index) => (
+                            <a
+                                key={index}
+                                href={policy.href}
+                                className="hover:scale-105 transition duration-300ms ease-in-out"
+                            >
+                                {policy.title}
+                            </a>
+                        ))}
+                    </div>
                 </div>
-                <div className="flex flex-row justify-center items-center space-x-6">
-                    {policies.map((policy, index) => (
-                        <a key={index} href={policy.href}>
-                            {policy.title}
-                        </a>
+                {/* Mobile */}
+                <div className="md:hidden grid grid-cols-2 gap-2">
+                    {footer_items.map((item, index) => (
+                        <div key={index}>
+                            <a href={item.href} className="text-base">{item.title}</a>
+                        </div>
                     ))}
                 </div>
-                <div className="text-center">
+                <div className="text-center pt-6">
                     <p>
                         &copy; {new Date().getFullYear()} Booklidio. All rights
                         reserved.

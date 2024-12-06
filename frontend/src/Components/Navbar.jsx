@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaBook, FaTimes, FaUser } from "react-icons/fa";
-import { MdShoppingCart } from "react-icons/md";
+import SearchBar from "./SearchBar";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,40 +10,41 @@ function Navbar() {
         { label: "Shop for Books", href: "#shop-for-books" },
         { label: "Sell on Booklidio", href: "#sell-books" },
         { label: "Account", href: "#account" },
-        { label: "Cart", href: "#Cart" },
+        { label: "Cart", href: "#cart" },
         { label: "FAQs", href: "#faqs" },
         { label: "Contact", href: "#contact" },
         { label: "About Us", href: "#about-us" },
+        { label: "Sign Up", href: "#sign-up" },
     ];
 
     const navbar_items = [
         { label: "Home", href: "#home" },
-        { label: "Shop for Books", href: "#shop-for-books" },
+        { label: "Browse Textbooks", href: "#shop-for-books" },
         { label: "Sell on Booklidio", href: "#sell-books" },
-        { label: "FAQs", href: "#faqs" },
         { label: "Contact", href: "#contact" },
         { label: "About Us", href: "#about-us" },
-        { label: <MdShoppingCart size={26} color="#680d28" />, href: "#cart" },
-        { label: <FaUser size={26} color="#680d28" />, href: "#account" },
+        { label: <FaUser size={26} />, href: "#account" },
     ];
 
     return (
         <nav className="bg-white shadow-lg fixed w-full z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto px-4 sm:px-6 lg:px-4">
                 <div className="flex justify-between h-16">
                     <div className="flex-shrink-0 flex items-center">
                         <span className="text-2xl font-bold text-[#680d28]">
-                            <FaBook size={28} />
+                            <FaBook size={36} />
                         </span>
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <SearchBar />
+
+                    <div className="hidden md:flex items-center justify-between">
                         {navbar_items.map((item) => (
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-gray-700 hover:text-[#680d28] px-3 py-2 rounded-md text-sm font-medium"
+                                className="text-zinc-700 hover:text-[#680d28] px-3 py-2 rounded-md text-sm font-medium transition duration-300ms ease-in-out lg:text-base"
                             >
                                 {item.label}
                             </a>
@@ -54,7 +55,7 @@ function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-700 hover:text-[#680d28]"
+                            className="text-zinc-800 hover:text-[#680d28]"
                         >
                             {isOpen ? (
                                 <FaTimes size={24} />
@@ -74,7 +75,7 @@ function Navbar() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-gray-700 hover:text-[#680d28] block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-zinc-800 hover:text-[#680d28] block px-3 py-2 rounded-md text-base font-medium"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}
