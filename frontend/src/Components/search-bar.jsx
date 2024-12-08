@@ -17,14 +17,14 @@ function SearchBar() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search for textbooks by title, subject, or ISBN"
-                className="hidden md:flex bg-zinc-100 p-2 rounded-full lg:min-w-full outline-red-900 text-zinc-700"
+                className="hidden md:flex bg-neutral-100 p-2 rounded-full lg:min-w-full outline-red-900 text-neutral-700"
             />
             <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Title, subject, or ISBN"
-                className="md:hidden bg-zinc-100 p-2 rounded-full lg:min-w-full outline-red-900 text-zinc-700"
+                className="md:hidden bg-neutral-100 p-2 rounded-full lg:min-w-full outline-red-900 text-neutral-700"
             />
             <button type="submit" className="ml-2">
                 <FaSearch size={22} className="text-red-900" />

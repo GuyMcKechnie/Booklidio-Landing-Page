@@ -43,7 +43,7 @@ function Navbar() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-zinc-700 hover:text-[#680d28] px-3 py-2 rounded-md text-sm font-medium transition duration-300ms ease-in-out lg:text-base"
+                                className="text-neutral-700 hover:text-[#680d28] px-3 py-2 rounded-md text-sm font-medium transition duration-300ms ease-in-out lg:text-base"
                             >
                                 {item.label}
                             </a>
@@ -54,7 +54,7 @@ function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-zinc-800 hover:text-[#680d28]"
+                            className="text-neutral-800 hover:text-[#680d28]"
                         >
                             {isOpen ? (
                                 <FaTimes size={24} />
@@ -74,7 +74,7 @@ function Navbar() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-zinc-800 hover:text-[#680d28] block px-3 py-2 rounded-md text-base font-medium no-underline"
+                                className="text-neutral-800 hover:text-[#680d28] block px-3 py-2 rounded-md text-base font-medium no-underline"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}

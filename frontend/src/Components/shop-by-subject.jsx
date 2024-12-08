@@ -68,7 +68,7 @@ const ShopBySubject = () => {
             <div>
                 {/* Desktop Menu */}
                 <div className="hidden md:flex flex-col">
-                    <h1 className="text-3xl pb-6 text-zinc-800 font-md">
+                    <h1 className="text-3xl pb-6 text-neutral-800 font-md">
                         Shop by Subject
                     </h1>
                     <div className="grid grid-cols-5  gap-4">
@@ -81,7 +81,7 @@ const ShopBySubject = () => {
                                     <div className="text-red-900">
                                         {subject.icon}
                                     </div>
-                                    <h1 className="text-2xl text-zinc-700 font-bold text-center">
+                                    <h1 className="text-2xl text-neutral-700 font-bold text-center">
                                         {subject.subject}
                                     </h1>
                                 </a>
@@ -91,7 +91,7 @@ const ShopBySubject = () => {
                 </div>
                 {/* Mobile Menu */}
                 <div className="md:hidden">
-                    <h1 className="text-3xl pb-6 text-zinc-800 font-md">
+                    <h1 className="text-3xl pb-6 text-neutral-800 font-md">
                         Shop by Subject
                     </h1>
                     <CCarousel caption>
@@ -104,7 +104,7 @@ const ShopBySubject = () => {
                                     >
                                         {subject.icon}
                                     </a>
-                                    <h1 className="text-zinc-700 text-3xl">
+                                    <h1 className="text-neutral-700 text-3xl">
                                         {subject.subject}
                                     </h1>
                                 </div>

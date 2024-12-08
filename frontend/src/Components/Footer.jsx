@@ -1,14 +1,8 @@
 import * as React from "react";
+import { FaMailBulk, FaPhone } from "react-icons/fa";
+import { TbLocation, TbMail, TbPhone } from "react-icons/tb";
 const Footer = () => {
     const footer_items = [
-        {
-            title: "About Us",
-            href: "about-us",
-        },
-        {
-            title: "Contact Us",
-            href: "contact-us",
-        },
         {
             title: "FAQ",
             href: "faq",
@@ -45,28 +39,56 @@ const Footer = () => {
                 className="flex flex-col px-6 space-y-4 bg-red-900 text-white pb-12 pt-6 pb-6 lg:pb-6 lg:pt-12"
             >
                 {/* Desktop */}
-                <div className="hidden lg:flex lg:flex-row lg:justify-around lg:items-center">
-                    <div className="grid lg:flex lg:flex-col lg:gap-1">
-                        {footer_items.slice(0, 4).map((policy, index) => (
-                            <a
-                                key={index}
-                                href={policy.href}
-                                className="hover:scale-105 transition duration-300ms ease-in-out"
-                            >
-                                {policy.title}
-                            </a>
-                        ))}
+                <div className="hidden lg:flex lg:flex-col lg:justify-around lg:items-center">
+                    <div className="flex justify-between px-20 py-6 items-center border-2 rounded-lg border-gradient-to-r from-red-100 to-red-300">
+                        <h1 className="text-6xl font-bold wrap w-1/2">
+                            South Africa's Largest Textbook Exchange
+                        </h1>
+                        <div className="flex flex-col gap-4">
+                            <div className="flex items-center gap-4">
+                                <div className="bg-red-800/90 p-2 rounded-lg">
+                                    <TbLocation size={28} />
+                                </div>
+                                <p className="text-base font-semibold text-white">
+                                    39 Johnson Street, Deneysville, Free State
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <div className="bg-red-800/90 p-2 rounded-lg">
+                                    <TbPhone size={28} />
+                                </div>
+                                <p className="text-base font-semibold text-white">
+                                    +27 76 477 8343
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <div className="bg-red-800/90 p-2 rounded-lg">
+                                    <TbMail size={28} />
+                                </div>
+                                <p className="text-base font-semibold text-white">
+                                    info@booklidio.com
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="grid lg:flex lg:flex-col lg:gap-1">
-                        {footer_items.slice(5, 9).map((policy, index) => (
-                            <a
-                                key={index}
-                                href={policy.href}
-                                className="hover:scale-105 transition duration-300ms ease-in-out"
-                            >
-                                {policy.title}
-                            </a>
-                        ))}
+                    <div className="flex justify-between items-center gap-20 pt-6">
+                        <div className="flex flex-row gap-5 items-center justify-between">
+                            {footer_items.map((policy, index) => (
+                                <a
+                                    key={index}
+                                    href={policy.href}
+                                    className="hover:scale-105 transition duration-300ms ease-in-out"
+                                >
+                                    {policy.title}
+                                </a>
+                            ))}
+                        </div>
+                        <div className="text-center">
+                            <p>
+                                &copy; {new Date().getFullYear()} Booklidio. All
+                                rights reserved.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 {/* Mobile */}
@@ -81,12 +103,6 @@ const Footer = () => {
                             </a>
                         </div>
                     ))}
-                </div>
-                <div className="text-center pt-6">
-                    <p>
-                        &copy; {new Date().getFullYear()} Booklidio. All rights
-                        reserved.
-                    </p>
                 </div>
             </div>
         </div>

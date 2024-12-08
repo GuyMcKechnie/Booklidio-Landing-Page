@@ -86,7 +86,7 @@ const ShopByGrade = () => {
             <div>
                 {/* Desktop Menu */}
                 <div className="hidden md:flex flex-col">
-                    <h1 className="text-3xl pb-6 text-zinc-800 font-md">
+                    <h1 className="text-3xl pb-6 text-neutral-800 font-md">
                         Shop by Grade
                     </h1>
                     <div className="grid grid-cols-6  gap-4">
@@ -99,7 +99,7 @@ const ShopByGrade = () => {
                                     <div className="text-red-900">
                                         {grade.icon}
                                     </div>
-                                    <h1 className="text-2xl text-zinc-700 font-bold text-center">
+                                    <h1 className="text-2xl text-neutral-700 font-bold text-center">
                                         {grade.grade}
                                     </h1>
                                 </a>
