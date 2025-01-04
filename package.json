@@ -1,0 +1,53 @@
+{
+    "name": "booklidio-ecom-store",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@coreui/coreui": "^5.2.0",
+        "@coreui/react": "^5.4.1",
+        "@relume_io/relume-tailwind": "^1.0.0",
+        "@relume_io/relume-ui": "^1.0.1",
+        "@storefront-ui/react": "^2.7.0",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "^17.0.2",
+        "react-bootstrap": "^2.10.6",
+        "react-dom": "^17.0.2",
+        "react-icons": "^5.4.0",
+        "react-router-dom": "^7.0.1",
+        "react-scripts": "5.0.1",
+        "styled-components": "^6.1.13",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^1.0.0",
+        "autoprefixer": "^10.3.7",
+        "postcss": "^8.3.11",
+        "tailwindcss": "^2.2.19",
+        "vite": "^2.6.4"
+    }
+}
