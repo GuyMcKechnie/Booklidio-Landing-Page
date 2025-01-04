@@ -1,4 +1,4 @@
-const { tailwindConfig } = require("@storefront-ui/react/tailwind-config");
+import { tailwindConfig } from "@storefront-ui/react/tailwind-config";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     presets: [tailwindConfig, require("@relume_io/relume-tailwind")],
