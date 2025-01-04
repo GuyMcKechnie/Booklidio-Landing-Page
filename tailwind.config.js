@@ -11,3 +11,4 @@ module.exports = {
     plugins: [require("tailwindcss-animate")],
     presets: [require("@relume_io/relume-tailwind")],
 };
+
