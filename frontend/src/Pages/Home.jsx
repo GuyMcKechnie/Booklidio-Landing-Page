@@ -1,30 +1,20 @@
-import * as React from "react";
-import Navbar from "../Components/navbar.jsx";
-import Hero from "../Components/hero.jsx";
-import Statistics from "../Components/statistics.jsx";
-import ShopByGrade from "../Components/shop-by-grade.jsx";
-import ShopBySubject from "../Components/shop-by-subject.jsx";
-import Footer from "../Components/footer.jsx";
-import Features from "../Components/features.jsx";
-import Process from "../Components/process.jsx";
-import FAQ from "../Components/faq.jsx";
-import SignUp from "../Components/signup.jsx";
+import React from "react";
+import Header from "../Components/Common/Header";
+import Hero from "../Components/Home/Hero";
+import Features from "../Components/Home/Features";
+import Testimonials from "../Components/Home/Testimonials";
+import Footer from "../Components/Common/Footer";
 
-function Home() {
+const Home = () => {
     return (
-        <div id="home-page">
-            <Navbar />
+        <div>
+            <Header />
             <Hero />
-            <Statistics />
             <Features />
-            <Process />
-            <FAQ />
-            <SignUp />
-            {/* <ShopByGrade />
-            <ShopBySubject /> */}
+            <Testimonials />
             <Footer />
         </div>
     );
-}
+};
 
 export default Home;

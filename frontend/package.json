@@ -5,6 +5,8 @@
   "dependencies": {
     "@coreui/coreui": "^5.2.0",
     "@coreui/react": "^5.4.1",
+    "@relume_io/relume-tailwind": "^1.0.0",
+    "@relume_io/relume-ui": "^1.0.1",
     "@storefront-ui/react": "^2.7.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
