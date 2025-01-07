@@ -17,19 +17,19 @@ const FAQ = (props) => {
     };
 
     return (
-        <section className="px-[5%] py-16 md:py-24 lg:py-28 bg-accent">
+        <section className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100">
             <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
                 <div>
-                    <h2 className="mb-5 text-5xl font-bold text-white rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
+                    <h2 className="mb-5 text-5xl font-bold text-text rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
                         Got a Question?
                     </h2>
-                    <p className="text-white md:text-md font-body">
+                    <p className="text-text md:text-md font-body">
                         {description}
                     </p>
                     <div className="mt-6 md:mt-8">
                         <Button
                             {...button}
-                            className="text-white border-2 border-white rounded-lg opacity-80"
+                            className="border-2 rounded-lg text-text border-text opacity-80"
                         >
                             {button.title}
                             <RxChevronRight />
@@ -44,17 +44,17 @@ const FAQ = (props) => {
                         <AccordionItem
                             key={index}
                             value={`item-${index}`}
-                            className="px-5 border border-white rounded-lg md:px-6"
+                            className="px-5 border rounded-lg border-text md:px-6"
                         >
                             <AccordionTrigger
                                 icon={
-                                    <RxPlus className="text-white transition-transform duration-300 size-7 shrink-0 md:size-8" />
+                                    <RxPlus className="transition-transform duration-300 text-text size-7 shrink-0 md:size-8" />
                                 }
-                                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45 text-white font-heading text-lg font-semibold text-left"
+                                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45 text-text font-heading text-lg font-semibold text-left"
                             >
                                 {question.question}
                             </AccordionTrigger>
-                            <AccordionContent className="text-white md:pb-6 font-body">
+                            <AccordionContent className="text-text md:pb-6 font-body">
                                 {question.answer}
                             </AccordionContent>
                         </AccordionItem>

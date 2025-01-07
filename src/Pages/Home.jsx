@@ -7,6 +7,7 @@ import Footer from "../Components/Common/Footer";
 import Buy from "../Components/Home/Buy";
 import Sell from "../Components/Home/Sell";
 import FAQ from "../Components/Home/FAQ";
+import CTA from "../Components/Home/CTA";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <Sell />
             <Testimonials />
             <FAQ />
+            <CTA />
             <Footer />
         </div>
     );
