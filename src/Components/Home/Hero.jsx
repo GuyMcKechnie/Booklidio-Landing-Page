@@ -12,7 +12,7 @@ const Hero = () => {
                         <div className="w-full max-w-lg text-left">
                             <h1 className="mb-5 font-bold text-7xl text-text font-heading md:mb-6 md:text-9xl lg:text-10xl">
                                 Buying & Selling Textbooks Made{" "}
-                                <span className="text-primary">Easy</span>
+                                <span className="text-accent">Easy</span>
                             </h1>
                             <p className="md:text-md font-body">
                                 Thousands of entities - parents, students, and
@@ -21,7 +21,7 @@ const Hero = () => {
                                 and academic resources at unbeatable prices.
                             </p>
                             <div className="flex items-center mt-6 gap-x-4 md:mt-8 font-heading ">
-                                <button className="flex items-center justify-center gap-2 px-4 py-2 text-lg text-white uppercase rounded-lg shadow-xxsmall shadow-primary bg-primary">
+                                <button className="flex items-center justify-center gap-2 px-4 py-2 text-lg text-white uppercase rounded-lg shadow-xxsmall shadow-accent bg-accent">
                                     <CgShoppingCart /> Buy
                                 </button>
                                 <button className="flex items-center justify-center gap-2 px-4 py-2 text-lg uppercase bg-gray-100 rounded-lg shadow-xxsmall shadow-gray-100">
