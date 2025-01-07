@@ -6,6 +6,7 @@ import Testimonials from "../Components/Home/Testimonials";
 import Footer from "../Components/Common/Footer";
 import Buy from "../Components/Home/Buy";
 import Sell from "../Components/Home/Sell";
+import FAQ from "../Components/Home/FAQ";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Buy />
             <Sell />
             <Testimonials />
+            <FAQ />
             <Footer />
         </div>
     );
