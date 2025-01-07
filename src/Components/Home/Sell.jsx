@@ -9,7 +9,7 @@ const SellFeature = (props) => {
     };
 
     return (
-        <section className="px-[5%] py-16 md:py-24 lg:py-28">
+        <section className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100">
             <div className="container">
                 <div className="grid grid-cols-1 text-text gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
                     <div>
