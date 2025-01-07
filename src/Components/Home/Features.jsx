@@ -36,10 +36,10 @@ const Features = () => {
                     <span className=" text-text">Booklidio</span>{" "}
                     <span className="opacity-80">Difference</span>
                 </h3>
-                <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
+                <div className="grid grid-cols-1 mb-12 gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
                     {featuresList.map((feature, index) => (
                         <div key={index} className="text-white feature-item">
-                            <div className="flex items-center gap-4 mb-4">
+                            <div className="flex items-center gap-4 mb-6">
                                 <div className="text-6xl">{feature.icon}</div>
                                 <h4 className="text-xl font-bold font-heading">
                                     {feature.heading}
