@@ -144,61 +144,45 @@ export const FooterDefaults = {
   `,
     columnLinks: [
         {
-            title: "Column One",
+            title: "For You",
             links: [
-                { title: "Link One", url: "#" },
-                { title: "Link Two", url: "#" },
-                { title: "Link Three", url: "#" },
-                { title: "Link Four", url: "#" },
-                { title: "Link Five", url: "#" },
+                { title: "FAQ", url: "/faq" },
+                { title: "Trading Process", url: "/trading-process" },
+                { title: "Shipping Information", url: "/shipping-information" },
+                { title: "Orders", url: "/orders" },
+                { title: "Account", url: "/account" },
             ],
         },
         {
-            title: "Column Two",
+            title: "About Us",
             links: [
-                { title: "Link Six", url: "#" },
-                { title: "Link Seven", url: "#" },
-                { title: "Link Eight", url: "#" },
-                { title: "Link Nine", url: "#" },
-                { title: "Link Ten", url: "#" },
+                { title: "Privacy Policy", url: "/privacy-policy" },
+                { title: "Terms of Service", url: "/tos" },
+                { title: "Returns Policy", url: "/returns-policy" },
+                { title: "Our Company", url: "/about-us" },
             ],
         },
         {
-            title: "Follow us",
+            title: "Follow Us",
             links: [
                 {
                     title: "Facebook",
-                    url: "#",
+                    url: "/https://www.facebook.com/Booklidio",
                     icon: <BiLogoFacebookCircle className="size-6" />,
                 },
                 {
                     title: "Instagram",
-                    url: "#",
+                    url: "https://www.instagram.com/booklidio/",
                     icon: <BiLogoInstagram className="size-6" />,
-                },
-                {
-                    title: "X",
-                    url: "#",
-                    icon: <FaXTwitter className="size-6 p-0.5" />,
-                },
-                {
-                    title: "LinkedIn",
-                    url: "#",
-                    icon: <BiLogoLinkedinSquare className="size-6" />,
-                },
-                {
-                    title: "Youtube",
-                    url: "#",
-                    icon: <BiLogoYoutube className="size-6" />,
                 },
             ],
         },
     ],
     footerText: "© 2025 Booklidio. All rights reserved.",
     footerLinks: [
-        { title: "Privacy Policy", url: "#" },
-        { title: "Terms of Service", url: "#" },
-        { title: "Cookies Settings", url: "#" },
+        { title: "Privacy Policy", url: "/privacy-policy" },
+        { title: "Terms of Service", url: "/tos" },
+        { title: "Cookies Settings", url: "/cookies" },
     ],
 };
 

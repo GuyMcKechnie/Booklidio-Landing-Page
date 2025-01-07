@@ -1,19 +1,17 @@
 import React from "react";
 import { Button } from "@relume_io/relume-ui";
+import { RxChevronRight } from "react-icons/rx";
 
-const Cta25Defaults = {
+const CTADefaults = {
     heading: "What are you waiting for?",
     description:
         "Don't miss out on the thousands of savings you could be making. Get started today!",
-    buttons: [
-        { title: "Buy Now" },
-        { title: "Sell Now", variant: "secondary" },
-    ],
+    buttons: [{ title: "Buy Now" }],
 };
 
-const Cta25 = (props) => {
+const CTA = (props) => {
     const { heading, description, buttons } = {
-        ...Cta25Defaults,
+        ...CTADefaults,
         ...props,
     };
     return (
@@ -34,6 +32,7 @@ const Cta25 = (props) => {
                             className="text-xl text-white border-none rounded-lg shadow-small shadow-white bg-secondary font-heading"
                         >
                             {button.title}
+                            <RxChevronRight />
                         </Button>
                     ))}
                 </div>
@@ -42,4 +41,4 @@ const Cta25 = (props) => {
     );
 };
 
-export default Cta25;
+export default CTA;

@@ -46,7 +46,7 @@ const BuyFeature = (props) => {
 };
 
 const LayoutDefaults = {
-    tagline: "Buying Textbooks",
+    tagline: "Buying but Better",
     heading: "Booklidio Makes Buying Textbooks a Breeze",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
