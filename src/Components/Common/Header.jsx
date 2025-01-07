@@ -24,7 +24,7 @@ const Navbar = (props) => {
                         </span>
                     </a>
                     <button
-                        className="flex flex-col items-center justify-center -mr-2 size-12 lg:hidden"
+                        className="flex flex-col items-center justify-center -mr-2 text-text size-12 lg:hidden"
                         onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                     >
                         <motion.span
@@ -37,12 +37,12 @@ const Navbar = (props) => {
                             variants={topLineVariants}
                         />
                         <motion.span
-                            className="my-[3px] h-0.5 w-6 bg-black"
+                            className="my-[3px] h-0.5 w-6 bg-black text-text"
                             animate={isMobileMenuOpen ? "open" : "closed"}
                             variants={middleLineVariants}
                         />
                         <motion.span
-                            className="my-[3px] h-0.5 w-6 bg-black"
+                            className="my-[3px] h-0.5 w-6 bg-black text-text "
                             animate={
                                 isMobileMenuOpen
                                     ? ["open", "rotatePhase"]
@@ -65,13 +65,13 @@ const Navbar = (props) => {
                     exit="close"
                     animate={isMobileMenuOpen ? "open" : "close"}
                     transition={{ duration: 0.4 }}
-                    className="overflow-hidden px-[5%] w-full lg:flex lg:items-center lg:justify-between lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+                    className="overflow-hidden px-[5%] w-full lg:flex text-text lg:items-center lg:justify-between lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
                 >
                     <SearchBar />
                     {navLinks.map((navLink, index) => (
                         <div
                             key={index}
-                            className="first:pt-4 lg:first:pt-0 font-heading"
+                            className="first:pt-4 lg:first:pt-0 font-heading text-text"
                         >
                             {navLink.subMenuLinks &&
                             navLink.subMenuLinks.length > 0 ? (
@@ -82,7 +82,7 @@ const Navbar = (props) => {
                             ) : (
                                 <a
                                     href={navLink.url}
-                                    className="block py-3 text-md lg:px-4 lg:py-2 lg:text-xl "
+                                    className="block py-3 text-md lg:px-4 lg:py-2 lg:text-xl text-text"
                                 >
                                     {navLink.title}
                                 </a>
@@ -115,7 +115,7 @@ const SubMenu = ({ navLink, isMobile }) => {
             onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
             <button
-                className="flex items-center justify-between w-full gap-2 py-3 text-left text-md lg:flex-none lg:justify-start lg:px-4 lg:py-2 lg:text-xl"
+                className="flex items-center justify-between w-full gap-2 py-3 text-left text-text text-md lg:flex-none lg:justify-start lg:px-4 lg:py-2 lg:text-xl"
                 onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
                 <span>{navLink.title}</span>
@@ -155,7 +155,7 @@ const SubMenu = ({ navLink, isMobile }) => {
                             <a
                                 key={index}
                                 href={navLink.url}
-                                className="block py-3 pl-[5%] text-md lg:px-4 lg:py-2 lg:text-base"
+                                className="block py-3 pl-[5%] text-md lg:px-4 lg:py-2 lg:text-base text-text"
                             >
                                 {navLink.title}
                             </a>

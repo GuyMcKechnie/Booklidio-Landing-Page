@@ -1,27 +1,27 @@
 import React from "react";
-import { MdSavings } from "react-icons/md";
-import { FaTruckFast } from "react-icons/fa6";
-import { IoShieldCheckmark } from "react-icons/io5";
+import { ImBooks } from "react-icons/im";
+import { FaMoneyCheck } from "react-icons/fa";
+import { GiBuyCard } from "react-icons/gi";
 
 const Features = () => {
     const featuresList = [
         {
-            icon: <MdSavings />,
-            heading: "Huge Savings",
+            icon: <ImBooks />,
+            heading: "Wide Range of Textbooks",
             description:
-                "Save up to 70% on essential textbooks and academic resources every year.",
+                "Access a vast collection of textbooks across various subjects and grades.",
         },
         {
-            icon: <IoShieldCheckmark />,
-            heading: "Unmatched Security",
+            icon: <FaMoneyCheck />,
+            heading: "Affordable Prices",
             description:
-                "Guaranteed quality assured textbooks with a satisfaction guarantee.",
+                "Save money with our competitive pricing on new and used textbooks.",
         },
         {
-            icon: <FaTruckFast />,
-            heading: "Delivery Nationwide",
+            icon: <GiBuyCard />,
+            heading: "Easy Buy & Sell",
             description:
-                "Fast and secure nation-wide delivery so you get your resources on time every time",
+                "Effortlessly buy and sell textbooks with our user-friendly platform.",
         },
     ];
 
@@ -32,15 +32,17 @@ const Features = () => {
         >
             <div className="container">
                 <h3 className="mb-12 text-3xl font-bold text-white font-heading">
-                    <span className="opacity-80">Discover the </span>
-                    <span className=" text-text">Booklidio</span>{" "}
-                    <span className="opacity-80">Difference</span>
+                    <span className="opacity-90">Discover the </span>
+                    <span className=" text-primary">Booklidio</span>{" "}
+                    <span className="opacity-90">Difference</span>
                 </h3>
                 <div className="grid grid-cols-1 mb-12 gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
                     {featuresList.map((feature, index) => (
                         <div key={index} className="text-white feature-item">
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="text-6xl">{feature.icon}</div>
+                                <div className="p-3 text-6xl text-white rounded-full bg-secondary">
+                                    {feature.icon}
+                                </div>
                                 <h4 className="text-xl font-bold font-heading">
                                     {feature.heading}
                                 </h4>

@@ -20,7 +20,7 @@ function SearchBar() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Title, subject, or ISBN"
-                className="flex flex-grow py-2 bg-white border-b-2 outline-none lg:px-[1%] text-text font-body"
+                className="flex flex-grow py-2 bg-white border-b-2 text-lg outline-none lg:px-[1%] text-text font-heading"
             />
             <button type="submit">
                 <FaSearch size={22} className="text-red-900" />
