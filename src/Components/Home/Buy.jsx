@@ -27,7 +27,7 @@ const BuyFeature = (props) => {
                                 <Button
                                     key={index}
                                     {...button}
-                                    className="px-4 py-2 text-xl text-white border-none rounded-lg font-heading bg-accent"
+                                    className="px-4 py-2 text-xl text-white border-none rounded-lg font-heading bg-primary"
                                 >
                                     {button.title}
                                 </Button>

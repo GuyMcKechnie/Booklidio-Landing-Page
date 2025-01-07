@@ -19,7 +19,7 @@ const Navbar = (props) => {
             <div className="justify-between size-full lg:flex lg:items-center">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <a href={logo.url}>
-                        <span className="text-4xl font-bold text-accent">
+                        <span className="text-4xl font-bold text-primary">
                             {logo.component}
                         </span>
                     </a>
@@ -94,7 +94,7 @@ const Navbar = (props) => {
                             <Button
                                 key={index}
                                 {...button}
-                                className="w-full text-xl text-white border-none rounded-lg shadow font-heading bg-accent"
+                                className="w-full text-xl text-white border-none rounded-lg shadow font-heading bg-primary"
                             >
                                 {button.title}
                             </Button>

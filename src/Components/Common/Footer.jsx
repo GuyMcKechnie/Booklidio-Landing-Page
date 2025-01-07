@@ -40,7 +40,7 @@ const Footer = (props) => {
                     <div className="flex flex-col">
                         <a
                             href={logo.url}
-                            className="mb-5 text-2xl font-semibold md:mb-6 text-accent font-heading"
+                            className="mb-5 text-2xl font-semibold md:mb-6 text-primary font-heading"
                         >
                             Booklidio
                         </a>

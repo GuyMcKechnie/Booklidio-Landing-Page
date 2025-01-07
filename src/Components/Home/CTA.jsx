@@ -17,7 +17,7 @@ const CTA = (props) => {
     return (
         <section
             id="relume"
-            className="px-[5%] py-16 md:py-24 lg:py-28 bg-accent"
+            className="px-[5%] py-16 md:py-24 lg:py-28 bg-primary"
         >
             <div className="container max-w-lg text-center">
                 <h2 className="mb-5 text-5xl font-bold text-white rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
@@ -29,7 +29,7 @@ const CTA = (props) => {
                         <Button
                             key={index}
                             {...button}
-                            className="text-xl text-white border-none rounded-lg shadow-small shadow-white bg-secondary font-heading"
+                            className="text-xl text-white border-none rounded-lg shadow-large shadow-white bg-[#560b22] font-heading"
                         >
                             {button.title}
                             <RxChevronRight />

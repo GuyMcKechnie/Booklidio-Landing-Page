@@ -33,14 +33,14 @@ const Features = () => {
             <div className="container">
                 <h3 className="mb-12 text-3xl font-bold text-text font-heading">
                     <span className="opacity-90">Discover the </span>
-                    <span className=" text-accent">Booklidio</span>{" "}
+                    <span className=" text-primary">Booklidio</span>{" "}
                     <span className="opacity-90">Difference</span>
                 </h3>
                 <div className="grid grid-cols-1 mb-12 gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
                     {featuresList.map((feature, index) => (
                         <div key={index} className="text-text feature-item">
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="p-3 text-6xl text-white rounded-full bg-accent">
+                                <div className="p-3 text-6xl text-white rounded-full bg-primary">
                                     {feature.icon}
                                 </div>
                                 <h4 className="text-xl font-bold font-heading text-text">
