@@ -1,7 +1,7 @@
 import { Button } from "@relume_io/relume-ui";
 
 const Hero = (props) => {
-    const { heading, description, buttons, image } = {
+    const { description, buttons, image } = {
         ...HeaderDefaults,
         ...props,
     };
@@ -38,9 +38,8 @@ const Hero = (props) => {
 };
 
 export const HeaderDefaults = {
-    heading: "Medium length hero heading goes here",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+        "Looking to save money on textbooks? Our online marketplace for used textbooks is the solution! Not only can you find great deals on books, but you can also make extra cash by selling your gently used textbooks.",
     buttons: [{ title: "Button" }, { title: "Button", variant: "secondary" }],
     image: {
         src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg",
