@@ -38,14 +38,15 @@ const Footer = (props) => {
             <div className="container">
                 <div className="grid grid-cols-1 gap-x-[8vw] gap-y-12 pb-12 md:gap-y-16 md:pb-18 lg:grid-cols-[0.75fr_1fr] lg:gap-y-4 lg:pb-20">
                     <div className="flex flex-col">
-                        <a href={logo.url} className="mb-5 md:mb-6">
-                            <img
-                                src={logo.src}
-                                alt={logo.alt}
-                                className="inline-block"
-                            />
+                        <a
+                            href={logo.url}
+                            className="mb-5 text-2xl font-semibold md:mb-6 text-primary font-heading"
+                        >
+                            Booklidio
                         </a>
-                        <p className="mb-5 md:mb-6">{newsletterDescription}</p>
+                        <p className="mb-5 md:mb-6 text-text font-body">
+                            {newsletterDescription}
+                        </p>
                         <div className="w-full max-w-md">
                             <form
                                 className="mb-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-[1fr_max-content] md:gap-y-4"
@@ -59,8 +60,14 @@ const Footer = (props) => {
                                     onChange={(e) =>
                                         setEmailInput(e.target.value)
                                     }
+                                    className="text-lg rounded-lg text-text font-heading"
                                 />
-                                <Button {...button}>{button.title}</Button>
+                                <Button
+                                    {...button}
+                                    className="text-lg rounded-lg text-text font-heading"
+                                >
+                                    {button.title}
+                                </Button>
                             </form>
                             <div
                                 dangerouslySetInnerHTML={{
@@ -118,12 +125,10 @@ const Footer = (props) => {
 
 export const FooterDefaults = {
     logo: {
-        url: "#",
-        src: "https://d22po4pjz3o32e.cloudfront.net/logo-image.svg",
-        alt: "Logo image",
+        url: "/",
     },
     newsletterDescription:
-        "Join our newsletter to stay up to date on features and releases.",
+        "Join our newsletter to receive updates on new textbooks, promotions, and more.",
     inputPlaceholder: "Enter your email",
     button: {
         title: "Subscribe",
@@ -133,8 +138,8 @@ export const FooterDefaults = {
     termsAndConditions: `
   <p class='text-xs'>
     By subscribing you agree to with our
-    <a href='#' class='underline'>Privacy Policy</a>
-    and provide consent to receive updates from our company.
+    <a href='/privacy-policy' class='underline'>Privacy Policy</a>
+    and provide consent to receive updates from Booklidio.
   </p>
   `,
     columnLinks: [

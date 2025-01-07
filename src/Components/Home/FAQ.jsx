@@ -29,7 +29,7 @@ const FAQ = (props) => {
                     <div className="mt-6 md:mt-8">
                         <Button
                             {...button}
-                            className="text-white border-2 border-white opacity-80"
+                            className="text-white border-2 border-white rounded-lg opacity-80"
                         >
                             {button.title}
                             <RxChevronRight />
@@ -44,7 +44,7 @@ const FAQ = (props) => {
                         <AccordionItem
                             key={index}
                             value={`item-${index}`}
-                            className="px-5 border border-white md:px-6"
+                            className="px-5 border border-white rounded-lg md:px-6"
                         >
                             <AccordionTrigger
                                 icon={

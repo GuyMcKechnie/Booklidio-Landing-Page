@@ -94,7 +94,7 @@ const Navbar = (props) => {
                             <Button
                                 key={index}
                                 {...button}
-                                className="w-full text-xl text-white border-none rounded-full shadow font-heading bg-primary"
+                                className="w-full text-xl text-white border-none rounded-lg shadow font-heading bg-primary"
                             >
                                 {button.title}
                             </Button>
