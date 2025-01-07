@@ -11,22 +11,18 @@ function SearchBar() {
     };
 
     return (
-        <form onSubmit={handleSearch} className="flex items-center lg:w-1/2 ">
-            <input
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search for textbooks by title, subject, or ISBN"
-                className="hidden md:flex bg-neutral-100 p-2 rounded-full lg:min-w-full outline-red-900 text-neutral-700"
-            />
+        <form
+            onSubmit={handleSearch}
+            className="flex items-center justify-between flex-grow gap-4 lg:px-[1%]"
+        >
             <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Title, subject, or ISBN"
-                className="md:hidden bg-neutral-100 p-2 rounded-full lg:min-w-full outline-red-900 text-neutral-700"
+                className="flex flex-grow py-2 bg-white border-b-2 text-lg outline-none lg:px-[1%] text-text font-heading"
             />
-            <button type="submit" className="ml-2">
+            <button type="submit">
                 <FaSearch size={22} className="text-red-900" />
             </button>
         </form>
