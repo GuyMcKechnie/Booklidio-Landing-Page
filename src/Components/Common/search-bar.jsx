@@ -23,7 +23,7 @@ function SearchBar() {
                 className="flex flex-grow py-2 bg-white border-b-2 text-lg outline-none lg:px-[1%] text-text font-heading"
             />
             <button type="submit">
-                <FaSearch size={22} className="text-red-900" />
+                <FaSearch size={22} className="text-accent" />
             </button>
         </form>
     );

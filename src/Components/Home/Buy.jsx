@@ -19,13 +19,15 @@ const BuyFeature = (props) => {
                         <h1 className="mb-5 text-2xl font-bold rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
                             {heading}
                         </h1>
-                        <p className="md:text-md font-body">{description}</p>
+                        <p className="md:text-md font-body text-text">
+                            {description}
+                        </p>
                         <div className="flex flex-wrap items-center gap-4 mt-6 md:mt-8">
                             {buttons.map((button, index) => (
                                 <Button
                                     key={index}
                                     {...button}
-                                    className="px-4 py-2 text-xl text-white border-none rounded-lg font-heading bg-primary"
+                                    className="px-4 py-2 text-xl text-white border-none rounded-lg font-heading bg-accent"
                                 >
                                     {button.title}
                                 </Button>
