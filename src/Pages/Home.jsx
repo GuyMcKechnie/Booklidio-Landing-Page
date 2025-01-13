@@ -12,7 +12,6 @@ import CTA from "../Components/Home/CTA";
 const Home = () => {
     return (
         <div>
-            <Header />
             <Hero />
             <Features />
             <Buy />

@@ -1,7 +1,6 @@
-import { Button } from "@relume_io/relume-ui";
-import { BiBook, BiBookOpen } from "react-icons/bi";
+import { BiBookOpen } from "react-icons/bi";
 import { CgShoppingCart } from "react-icons/cg";
-import HeroImage from "../../Assets/hero.png";
+import { assets } from "../../Assets/Assets.js";
 
 const Hero = () => {
     return (
@@ -15,10 +14,10 @@ const Hero = () => {
                                 <span className="text-primary">Easy</span>
                             </h1>
                             <p className="md:text-md font-body">
-                                Thousands of entities - parents, students, and
-                                educators - trust Booklidio to buy and sell
-                                textbooks. We offer a wide range of textbooks
-                                and academic resources at unbeatable prices.
+                                Thousands of parents, students, and educators
+                                trust Booklidio to buy and sell textbooks. We
+                                offer a wide range of textbooks and academic
+                                resources at unbeatable prices.
                             </p>
                             <div className="flex items-center mt-6 gap-x-4 md:mt-8 font-heading ">
                                 <button className="flex items-center justify-center gap-2 px-4 py-2 text-lg text-white uppercase rounded-lg shadow-xxsmall shadow-primary bg-primary">
@@ -32,8 +31,7 @@ const Hero = () => {
                     </div>
                     <div>
                         <img
-                            // src={HeroImage}
-                            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                            src={assets.hero}
                             className="object-cover size-full md:max-w-md lg:max-w-lg"
                             alt="hero image"
                         />
