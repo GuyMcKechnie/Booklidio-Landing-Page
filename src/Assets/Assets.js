@@ -1,33 +1,31 @@
+import { v4 as uuid4 } from "uuid";
+
 export const assets = {
     hero,
 };
 
-export const products = {
-    accounting: {
+export const products = [
+    {
+        id: uuid4(),
         image: accountingImage,
         name: "Accounting",
+        price: 120,
+        grade: 2,
+        subject: "Afrikaans",
         description:
             "By ensuring that deliveryFee is properly declared and the ShopContextProvider component is correctly defined and used, you should be able to resolve the defaultValue is not defined error. This setup ensures that the products state is accessible within the Collections component.",
     },
-    accounting: {
+    {
+        id: uuid4(),
         image: accountingImage,
         name: "Accounting",
+        price: 120,
+        grade: 1,
+        subject: "English",
         description:
             "By ensuring that deliveryFee is properly declared and the ShopContextProvider component is correctly defined and used, you should be able to resolve the defaultValue is not defined error. This setup ensures that the products state is accessible within the Collections component.",
     },
-    accounting: {
-        image: accountingImage,
-        name: "Accounting",
-        description:
-            "By ensuring that deliveryFee is properly declared and the ShopContextProvider component is correctly defined and used, you should be able to resolve the defaultValue is not defined error. This setup ensures that the products state is accessible within the Collections component.",
-    },
-    accounting: {
-        image: accountingImage,
-        name: "Accounting",
-        description:
-            "By ensuring that deliveryFee is properly declared and the ShopContextProvider component is correctly defined and used, you should be able to resolve the defaultValue is not defined error. This setup ensures that the products state is accessible within the Collections component.",
-    },
-};
+];
 
 import hero from "./hero.png";
 import accountingImage from "./Subjects/acc-subject.png";

@@ -1,13 +1,7 @@
 "use client";
 
 import { Button, Input } from "@relume_io/relume-ui";
-import { FaXTwitter } from "react-icons/fa6";
-import {
-    BiLogoFacebookCircle,
-    BiLogoInstagram,
-    BiLogoLinkedinSquare,
-    BiLogoYoutube,
-} from "react-icons/bi";
+import { BiLogoFacebookCircle, BiLogoInstagram } from "react-icons/bi";
 import { useState } from "react";
 
 const Footer = (props) => {
@@ -28,9 +22,6 @@ const Footer = (props) => {
     const [emailInput, setEmailInput] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log({
-            emailInput,
-        });
     };
 
     return (

@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "../Components/Common/Header";
 import Footer from "../Components/Common/Footer";
-import { useContext } from "react";
-import Collection from "../Components/Common/Collection";
-import ShopContext from "../Context/ShopContext";
+import Collection from "../Components/Products/Collection";
+import { ShopContext } from "../Context/ShopContext";
 
 const GradeCollection = () => {
     const { products } = useContext(ShopContext);
