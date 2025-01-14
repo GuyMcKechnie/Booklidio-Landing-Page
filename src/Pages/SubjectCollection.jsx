@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import { ShopContext } from "../Context/ShopContext";
 import { assets } from "../Assets/Assets";
 import { BiDollar } from "react-icons/bi";
+import Collection from "../Components/Products/Collection.jsx";
 
 const GradeCollection = () => {
     const { products } = useContext(ShopContext);
     return (
-        <section>
+        <section className="pt-18">
+            {/* Header Section */}
             <div className="flex flex-col items-center px-8 py-6 md:flex-row justify-evenly md:1/2 shadow-small bg-primary">
                 <div className="flex flex-col items-start gap-6 px-10 md:w-1/2">
                     <h1 className="font-semibold text-white font-heading text-8xl">
@@ -38,6 +40,7 @@ const GradeCollection = () => {
                     />
                 </div>
             </div>
+            <Collection products={products} />
         </section>
     );
 };

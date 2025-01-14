@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBook } from "react-icons/fa";
+import { FaBook, FaShoppingCart } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { RxChevronDown } from "react-icons/rx";
@@ -20,7 +20,7 @@ const Navbar = (props) => {
     const isMobile = useMediaQuery("(max-width: 991px)");
 
     return (
-        <nav className="fixed z-50 flex items-center w-full bg-white shadow-lg lg:min-h-18 lg:px-8">
+        <nav className="fixed z-50 flex items-center w-full bg-white shadow-lg h-18 lg:px-8">
             <div className="justify-between size-full lg:flex lg:items-center">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <Link
@@ -105,7 +105,7 @@ const Navbar = (props) => {
                     ))}
                     <Link
                         to={"/cart"}
-                        className="relative p-3 text-lg text-white transition-colors duration-300 rounded-full group bg-primary hover:bg-accent "
+                        className="hidden p-3 text-lg text-white transition-colors duration-300 rounded-full lg:flex group bg-primary hover:bg-accent "
                     >
                         <CgShoppingCart
                             className="transition-transform group-hover:scale-110"
@@ -126,33 +126,31 @@ const SubMenu = ({ navLink, isMobile }) => {
             onMouseEnter={() => !isMobile && setIsDropdownOpen(true)}
             onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
-            <a href={navLink.url}>
-                <button
-                    className="flex items-center justify-between w-full gap-2 py-3 text-left text-text text-md lg:flex-none lg:justify-start lg:px-4 lg:py-2 lg:text-xl"
-                    onClick={() => setIsDropdownOpen((prev) => !prev)}
+            <button
+                className="flex items-center justify-between w-full gap-2 py-3 text-left text-text text-md lg:flex-none lg:justify-start lg:px-4 lg:py-2 lg:text-xl"
+                onClick={() => setIsDropdownOpen((prev) => !prev)}
+            >
+                <span className="transition-transform group-hover:-translate-y-0.5">
+                    {navLink.title}
+                    <div
+                        className={`w-[70%] mx-auto h-0.5 rounded-full group-hover:w-[80%] transition-all bg-primary ${
+                            location.pathname === navLink.url
+                                ? "flex"
+                                : "hidden"
+                        }`}
+                    />
+                </span>
+                <motion.span
+                    variants={{
+                        rotated: { rotate: 180 },
+                        initial: { rotate: 0 },
+                    }}
+                    animate={isDropdownOpen ? "rotated" : "initial"}
+                    transition={{ duration: 0.3 }}
                 >
-                    <span className="transition-transform group-hover:-translate-y-0.5">
-                        {navLink.title}
-                        <div
-                            className={`w-[70%] mx-auto h-0.5 rounded-full group-hover:w-[80%] transition-all bg-primary ${
-                                location.pathname === navLink.url
-                                    ? "flex"
-                                    : "hidden"
-                            }`}
-                        />
-                    </span>
-                    <motion.span
-                        variants={{
-                            rotated: { rotate: 180 },
-                            initial: { rotate: 0 },
-                        }}
-                        animate={isDropdownOpen ? "rotated" : "initial"}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <RxChevronDown />
-                    </motion.span>
-                </button>
-            </a>
+                    <RxChevronDown />
+                </motion.span>
+            </button>
             {isDropdownOpen && (
                 <AnimatePresence>
                     <motion.nav
@@ -197,16 +195,15 @@ export const NavbarDefaults = {
     navLinks: [
         {
             title: "Collections",
-            url: "/collections",
             subMenuLinks: [
                 {
                     title: "Grade",
-                    url: "/grade",
+                    url: "/grades",
                     component: <BiPencil />,
                 },
                 {
                     title: "Subject",
-                    url: "/subject",
+                    url: "/subjects",
                     component: <BiCalculator />,
                 },
             ],
@@ -215,9 +212,9 @@ export const NavbarDefaults = {
         { title: "Contact", url: "/contact" },
         {
             title: "My Account",
-            url: "/account",
             subMenuLinks: [
                 { title: "Orders", url: "/orders", component: <BiReceipt /> },
+                { title: "Cart", url: "/cart", component: <CgShoppingCart /> },
                 {
                     title: "Invoices",
                     url: "/invoices",

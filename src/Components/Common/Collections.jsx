@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
-import { ShopContext } from "../Context/ShopContext";
-import { assets } from "../Assets/Assets";
+import { CgShoppingCart } from "react-icons/cg";
+import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { assets } from "../../Assets/Assets";
+import { PiPiggyBank, PiPiggyBankBold } from "react-icons/pi";
 import { BiDollar } from "react-icons/bi";
 
-const GradeCollection = () => {
-    const { products } = useContext(ShopContext);
+function Collections() {
     return (
-        <section>
+        <section className="py-18 md:py-20 lg:py-28">
             <div className="flex flex-col items-center px-8 py-6 md:flex-row justify-evenly md:1/2 shadow-small bg-primary">
                 <div className="flex flex-col items-start gap-6 px-10 md:w-1/2">
                     <h1 className="font-semibold text-white font-heading text-8xl">
@@ -40,6 +41,6 @@ const GradeCollection = () => {
             </div>
         </section>
     );
-};
+}
 
-export default GradeCollection;
+export default Collections;

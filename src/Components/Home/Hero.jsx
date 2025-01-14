@@ -4,8 +4,8 @@ import { assets } from "../../Assets/Assets.js";
 
 const Hero = () => {
     return (
-        <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 ">
-            <div className="container ">
+        <section className="px-[5%] pt-18">
+            <div className="py-18 lg:py-12">
                 <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
                     <div className="mb-12 text-center md-18 lg:mb-20 lg:items-start">
                         <div className="w-full max-w-lg text-left">
