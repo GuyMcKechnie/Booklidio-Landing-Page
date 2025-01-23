@@ -6,7 +6,6 @@ const CTADefaults = {
     heading: "What are you waiting for?",
     description:
         "Don't miss out on the thousands of savings you could be making. Get started today!",
-    buttons: [{ title: "Buy Now" }],
 };
 
 const CTA = (props) => {
@@ -25,16 +24,10 @@ const CTA = (props) => {
                 </h2>
                 <p className="text-white md:text-md font-body">{description}</p>
                 <div className="flex items-center justify-center gap-4 mt-6 md:mt-8">
-                    {buttons.map((button, index) => (
-                        <Button
-                            key={index}
-                            {...button}
-                            className="text-xl text-white border-none rounded-lg shadow-large shadow-white bg-[#560b22] font-heading"
-                        >
-                            {button.title}
-                            <RxChevronRight />
-                        </Button>
-                    ))}
+                    <Button className="group text-xl border-none rounded-lg shadow-large shadow-white bg-[#560b22] font-heading hidden p-3 text-lg text-white transition-all duration-300 lg:flex group hover:bg-accent hover:-translate-y-1 hover:shadow-xlarge">
+                        Get Started
+                        <RxChevronRight className="" />
+                    </Button>
                 </div>
             </div>
         </section>

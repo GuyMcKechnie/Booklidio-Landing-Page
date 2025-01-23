@@ -11,6 +11,8 @@ import Header from "./Components/Common/Header.jsx";
 import Footer from "./Components/Common/Footer.jsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import SubjectCollection from "./Pages/SubjectCollection.jsx";
+import FAQPage from "./Pages/FAQPage.jsx";
+import Contact from "./Pages/Contact.jsx";
 
 function App() {
     return (
@@ -27,6 +29,8 @@ function App() {
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/faq" element={<FAQPage />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
         </div>

@@ -9,11 +9,18 @@ import {
 } from "@relume_io/relume-ui";
 import { RxPlus } from "react-icons/rx";
 import { BiChevronRight } from "react-icons/bi";
+import SecondaryButton from "../Common/Buttons/SecondaryButton";
 
 const FAQ = (props) => {
-    const { description, button, questions } = {
+    const { description, questions } = {
         ...Faq6Defaults,
         ...props,
+    };
+
+    const buttonVariables = {
+        title: "Contact",
+        icon: <BiChevronRight size={24} />,
+        link: "/contact",
     };
 
     return (
@@ -27,30 +34,28 @@ const FAQ = (props) => {
                         {description}
                     </p>
                     <div className="mt-6 md:mt-8">
-                        <Button
-                            {...button}
-                            className="border-2 rounded-lg text-text border-text opacity-80"
-                        >
-                            {button.title}
-                            <RxChevronRight />
-                        </Button>
+                        <SecondaryButton
+                            title={buttonVariables.title}
+                            icon={buttonVariables.icon}
+                            link={buttonVariables.link}
+                        />
                     </div>
                 </div>
                 <Accordion
                     type="multiple"
-                    className="grid items-start gap-4 justify-stretch"
+                    className="grid items-start gap-4 transition-all justify-stretch"
                 >
                     {questions.map((question, index) => (
                         <AccordionItem
                             key={index}
                             value={`item-${index}`}
-                            className="px-5 border rounded-lg border-text md:px-6"
+                            className="px-5 transition-all border-2 rounded-lg group border-text md:px-6 hover:border-accent"
                         >
                             <AccordionTrigger
                                 icon={
-                                    <RxPlus className="transition-transform duration-300 text-text size-7 shrink-0 md:size-8" />
+                                    <RxPlus className="transition-transform duration-300 text-text group-hover:text-accent size-7 shrink-0 md:size-8" />
                                 }
-                                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45 text-text font-heading text-lg font-semibold text-left"
+                                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45 text-text group-hover:text-accent font-heading text-lg font-semibold text-left"
                             >
                                 {question.question}
                             </AccordionTrigger>
@@ -91,7 +96,7 @@ const Faq6Defaults = {
         {
             question:
                 "What if I receive a book different from the description?",
-            answer: "Customer satisfaction is our top priority. If the book doesn't match its listed condition, please follow these steps: Contact us within 48 hours of receiving the book, provide photographic evidence, and receive a full refund or book replacement. We have no complex return procedures and offer a 100% satisfaction guarantee.",
+            answer: "Customer satisfaction is our top priority. If the book doesn't match its listed condition, please contact us within 48 hours of receiving the book, provide photographic evidence, and receive a full refund or book replacement. We have no complex return procedures and offer a 100% satisfaction guarantee.",
         },
         {
             question: "Do you cover textbooks for all academic disciplines?",

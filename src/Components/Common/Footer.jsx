@@ -1,5 +1,3 @@
-"use client";
-
 import { Button, Input } from "@relume_io/relume-ui";
 import { BiLogoFacebookCircle, BiLogoInstagram } from "react-icons/bi";
 import { useState } from "react";
@@ -9,8 +7,6 @@ const Footer = (props) => {
         logo,
         newsletterDescription,
         inputPlaceholder,
-        button,
-        termsAndConditions,
         columnLinks,
         footerText,
         footerLinks,
@@ -51,20 +47,25 @@ const Footer = (props) => {
                                     onChange={(e) =>
                                         setEmailInput(e.target.value)
                                     }
-                                    className="text-lg rounded-lg text-text font-heading"
+                                    className="rounded-lg text-text font-body"
                                 />
-                                <Button
-                                    {...button}
-                                    className="text-lg rounded-lg text-text font-heading"
-                                >
-                                    {button.title}
+                                <Button className="rounded-lg font-body text-text">
+                                    Subscribe
                                 </Button>
                             </form>
-                            <div
-                                dangerouslySetInnerHTML={{
-                                    __html: termsAndConditions,
-                                }}
-                            />
+                            <div>
+                                <p className="text-xs font-body">
+                                    By subscribing you agree to with our{" "}
+                                    <a
+                                        href="/privacy-policy"
+                                        className="underline"
+                                    >
+                                        Privacy Policy
+                                    </a>{" "}
+                                    and provide consent to receive updates from
+                                    Booklidio.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className="grid items-start grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-x-6 md:gap-x-8 md:gap-y-4">
@@ -73,14 +74,14 @@ const Footer = (props) => {
                                 key={index}
                                 className="flex flex-col items-start justify-start"
                             >
-                                <h2 className="mb-3 font-semibold md:mb-4">
+                                <h2 className="mb-3 font-semibold md:mb-4 font-heading">
                                     {column.title}
                                 </h2>
                                 <ul>
                                     {column.links.map((link, linkIndex) => (
                                         <li
                                             key={linkIndex}
-                                            className="py-2 text-sm"
+                                            className="py-2 text-sm font-body"
                                         >
                                             <a
                                                 href={link.url}
@@ -99,7 +100,7 @@ const Footer = (props) => {
                     </div>
                 </div>
                 <div className="w-full h-px bg-black" />
-                <div className="flex flex-col-reverse items-start justify-between pt-6 pb-4 text-sm md:flex-row md:items-center md:pb-0 md:pt-8">
+                <div className="flex flex-col-reverse items-start justify-between pt-6 pb-4 text-sm font-body md:flex-row md:items-center md:pb-0 md:pt-8">
                     <p className="mt-6 md:mt-0">{footerText}</p>
                     <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
                         {footerLinks.map((link, index) => (
@@ -121,18 +122,6 @@ export const FooterDefaults = {
     newsletterDescription:
         "Join our newsletter to receive updates on new textbooks, promotions, and more.",
     inputPlaceholder: "Enter your email",
-    button: {
-        title: "Subscribe",
-        variant: "secondary",
-        size: "sm",
-    },
-    termsAndConditions: `
-  <p class='text-xs'>
-    By subscribing you agree to with our
-    <a href='/privacy-policy' class='underline'>Privacy Policy</a>
-    and provide consent to receive updates from Booklidio.
-  </p>
-  `,
     columnLinks: [
         {
             title: "For You",
