@@ -29,10 +29,10 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="w-full max-w-lg lg:max-w-xl">
                         <img
                             src={assets.hero}
-                            className="object-cover size-full md:max-w-md lg:max-w-lg"
+                            className="object-cover size-full"
                             alt="hero image"
                         />
                     </div>

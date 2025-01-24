@@ -128,7 +128,7 @@ const ReturnsPolicy = () => {
                         If you have any questions about these Terms, please
                         contact us using our contact form on the{" "}
                         <a href="/contact" className="underline">
-                            Contact Us
+                            Contact
                         </a>{" "}
                         page.
                     </p>
