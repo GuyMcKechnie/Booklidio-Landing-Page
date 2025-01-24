@@ -24,3 +24,17 @@ code {
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
 }
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Barlow Condensed;
+    color: #363636;
+}
+
+p,
+li {
+    font-family: Montserrat;
+    color: #363636;
+}

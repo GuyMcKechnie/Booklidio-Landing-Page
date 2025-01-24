@@ -137,7 +137,7 @@ export const FooterDefaults = {
             title: "About Us",
             links: [
                 { title: "Privacy Policy", url: "/privacy-policy" },
-                { title: "Terms of Service", url: "/tos" },
+                { title: "Terms of Service", url: "/terms-of-service" },
                 { title: "Returns Policy", url: "/returns-policy" },
                 { title: "Our Company", url: "/about-us" },
             ],
@@ -161,7 +161,7 @@ export const FooterDefaults = {
     footerText: "© 2025 Booklidio. All rights reserved.",
     footerLinks: [
         { title: "Privacy Policy", url: "/privacy-policy" },
-        { title: "Terms of Service", url: "/tos" },
+        { title: "Terms of Service", url: "/terms-of-service" },
         { title: "Cookies Settings", url: "/cookies" },
     ],
 };

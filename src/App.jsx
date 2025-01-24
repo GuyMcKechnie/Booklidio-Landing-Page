@@ -13,6 +13,8 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import SubjectCollection from "./Pages/SubjectCollection.jsx";
 import FAQPage from "./Pages/FAQPage.jsx";
 import Contact from "./Pages/Contact.jsx";
+import TOS from "./Pages/TOS.jsx";
+import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 
 function App() {
     return (
@@ -28,9 +30,10 @@ function App() {
                 <Route path="/place-order" element={<PlaceOrder />} />
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/returns-policy" element={<ReturnsPolicy />} />
                 <Route path="/faq" element={<FAQPage />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/terms-of-service" element={<TOS />} />
             </Routes>
             <Footer />
         </div>
