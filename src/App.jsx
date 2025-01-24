@@ -16,6 +16,7 @@ import Contact from "./Pages/Contact.jsx";
 import TOS from "./Pages/TOS.jsx";
 import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 import NotFound from "./Pages/NotFound.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/faq" element={<FAQPage />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/terms-of-service" element={<TOS />} />
+                <Route path="/about-us" element={<AboutUs />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

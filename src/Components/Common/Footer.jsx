@@ -101,14 +101,7 @@ const Footer = (props) => {
                 </div>
                 <div className="w-full h-px bg-black" />
                 <div className="flex flex-col-reverse items-start justify-between pt-6 pb-4 text-sm font-body md:flex-row md:items-center md:pb-0 md:pt-8">
-                    <p className="mt-6 md:mt-0">{footerText}</p>
-                    <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
-                        {footerLinks.map((link, index) => (
-                            <li key={index} className="underline">
-                                <a href={link.url}>{link.title}</a>
-                            </li>
-                        ))}
-                    </ul>
+                    <p className="mt-6 text-center md:mt-0">{footerText}</p>
                 </div>
             </div>
         </footer>
@@ -139,6 +132,7 @@ export const FooterDefaults = {
                 { title: "Privacy Policy", url: "/privacy-policy" },
                 { title: "Terms of Service", url: "/terms-of-service" },
                 { title: "Returns Policy", url: "/returns-policy" },
+                { title: "Cookies Settings", url: "/cookies-settings" },
                 { title: "Our Company", url: "/about-us" },
             ],
         },
@@ -159,11 +153,6 @@ export const FooterDefaults = {
         },
     ],
     footerText: "© 2025 Booklidio. All rights reserved.",
-    footerLinks: [
-        { title: "Privacy Policy", url: "/privacy-policy" },
-        { title: "Terms of Service", url: "/terms-of-service" },
-        { title: "Cookies Settings", url: "/cookies" },
-    ],
 };
 
 export default Footer;

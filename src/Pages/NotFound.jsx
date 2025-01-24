@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
 import PrimaryButton from "../Components/Common/Buttons/PrimaryButton";
-import { BsBack, BsBackspace } from "react-icons/bs";
-import { GiReturnArrow } from "react-icons/gi";
 import { BiHome } from "react-icons/bi";
 
 const NotFound = () => {
