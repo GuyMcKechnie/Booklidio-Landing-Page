@@ -8,6 +8,7 @@ import { BiCalculator, BiPencil, BiReceipt } from "react-icons/bi";
 import { LuLogOut } from "react-icons/lu";
 import { TbInvoice } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
+import { assets } from "../../Assets/Assets";
 
 const Navbar = (props) => {
     const location = useLocation();
@@ -20,14 +21,18 @@ const Navbar = (props) => {
     const isMobile = useMediaQuery("(max-width: 991px)");
 
     return (
-        <nav className="fixed z-50 flex items-center w-full bg-white shadow-lg h-18 lg:px-8">
+        <nav className="fixed z-50 flex items-center w-full h-20 bg-white shadow-lg lg:px-8">
             <div className="justify-between size-full lg:flex lg:items-center">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <Link
                         to="/"
-                        className="text-4xl font-bold transition-all text-primary hover:text-accent hover:scale-110"
+                        className="flex items-center text-4xl font-bold transition-all justify-left text-primary hover:text-accent hover:scale-110"
                     >
-                        <FaBook size={32} />
+                        <img
+                            src={assets.header}
+                            className="w-[30%] lg:w-[40%] -ml-4"
+                            alt=""
+                        />
                     </Link>
                     <button
                         className="flex flex-col items-center justify-center -mr-2 text-text size-12 lg:hidden"
@@ -71,7 +76,7 @@ const Navbar = (props) => {
                     exit="close"
                     animate={isMobileMenuOpen ? "open" : "close"}
                     transition={{ duration: 0.4 }}
-                    className="overflow-hidden px-[5%] w-full lg:flex text-text lg:items-center lg:justify-end lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+                    className="overflow-hidden px-[5%] w-full lg:flex text-text lg:items-center bg-white lg:justify-end lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
                 >
                     {navLinks.map((navLink, index) => (
                         <div

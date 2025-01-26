@@ -19,10 +19,16 @@ import NotFound from "./Pages/NotFound.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { motion } from "framer-motion";
 
 function App() {
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.3 }}
+        >
             <Analytics />
             <SpeedInsights />
             <Header />
@@ -44,7 +50,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
-        </div>
+        </motion.div>
     );
 }
 
