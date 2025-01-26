@@ -17,10 +17,12 @@ import TOS from "./Pages/TOS.jsx";
 import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     return (
         <div>
+            <Analytics />
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
