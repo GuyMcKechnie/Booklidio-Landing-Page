@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import StarBorder from "../Common/StarBorder.jsx";
+import { Link } from "react-router-dom";
 
 const CTADefaults = {
     heading: "What are you waiting for?",
@@ -23,8 +23,17 @@ const CTA = (props) => {
                 <p className="text-white md:text-md font-body">{description}</p>
                 <div className="flex items-center justify-center gap-4 mt-6 md:mt-8">
                     <StarBorder className="transition-all custom-class hover:scale-110">
-                        <span>Get Started</span>
-                        <RxChevronRight className="" />
+                        <Link
+                            to="/shop"
+                            className="flex items-center justify-center gap-2 text-white transition-all rounded-lg group w-fit"
+                        >
+                            <span className="text-lg uppercase">
+                                Get Started
+                            </span>
+                            <span className="group-hover:translate-x-0.5 text-lg transition-all">
+                                <RxChevronRight className="text-lg" />
+                            </span>
+                        </Link>
                     </StarBorder>
                 </div>
             </div>

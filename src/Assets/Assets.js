@@ -3,6 +3,8 @@ import { v4 as uuid4 } from "uuid";
 export const assets = {
     hero,
     header,
+    buy,
+    sell,
     faq,
     studyGuide1,
     studyGuide2,
@@ -35,6 +37,8 @@ export const products = [
 
 import hero from "./hero.png";
 import header from "./header.svg";
+import buy from "./buy.png";
+import sell from "./sell.png";
 import faq from "./faq.png";
 import accountingImage from "./Subjects/acc-subject.png";
 import studyGuide1 from "./Subjects/study-guide-1.jpg";

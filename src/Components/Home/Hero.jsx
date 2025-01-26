@@ -1,6 +1,8 @@
 import { BiBookOpen } from "react-icons/bi";
 import { CgShoppingCart } from "react-icons/cg";
 import { assets } from "../../Assets/Assets.js";
+import PrimaryButton from "../Common/Buttons/PrimaryButton.jsx";
+import SecondaryButton from "../Common/Buttons/SecondaryButton.jsx";
 
 const Hero = () => {
     return (
@@ -19,17 +21,21 @@ const Hero = () => {
                                 offer a wide range of textbooks and academic
                                 resources at unbeatable prices.
                             </p>
-                            <div className="flex items-center mt-6 gap-x-4 md:mt-8 font-heading ">
-                                <button className="flex items-center justify-center gap-2 px-4 py-2 text-lg text-white uppercase rounded-lg shadow-xxsmall shadow-primary bg-primary">
-                                    <CgShoppingCart /> Buy
-                                </button>
-                                <button className="flex items-center justify-center gap-2 px-4 py-2 text-lg uppercase bg-gray-100 rounded-lg shadow-xxsmall shadow-gray-100">
-                                    <BiBookOpen /> Sell
-                                </button>
+                            <div className="flex items-center mt-6 gap-x-4 md:mt-8 ">
+                                <PrimaryButton
+                                    title={"Buy"}
+                                    icon={<CgShoppingCart />}
+                                    link={"/shop"}
+                                ></PrimaryButton>
+                                <SecondaryButton
+                                    title={"Sell"}
+                                    icon={<BiBookOpen />}
+                                    link={"/shop"}
+                                ></SecondaryButton>
                             </div>
                         </div>
                     </div>
-                    <div className="w-full max-w-lg lg:max-w-xl">
+                    <div className="w-full max-w-lg lg:max-w-md">
                         <img
                             src={assets.hero}
                             className="object-cover size-full"

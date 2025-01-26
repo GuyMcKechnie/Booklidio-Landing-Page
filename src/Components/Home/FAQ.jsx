@@ -23,7 +23,7 @@ const FAQ = (props) => {
     };
 
     return (
-        <section className="px-[5%] py-16 md:py-24 lg:py-28">
+        <section className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100">
             <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
                 <div>
                     <h2 className="mb-5 text-5xl font-bold text-text rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
