@@ -26,7 +26,7 @@ const Navbar = (props) => {
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <Link
                         to="/"
-                        className="flex items-center text-4xl font-bold transition-all justify-left text-primary hover:text-accent hover:scale-110"
+                        className="flex items-center text-4xl font-bold transition-all justify-left text-primary hover:text-accent hover:-translate-y-1"
                     >
                         <img
                             src={assets.header}
