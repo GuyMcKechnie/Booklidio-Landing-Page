@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import GradeCollection from "./Pages/GradeCollection.jsx";
 import Product from "./Pages/Product.jsx";
@@ -18,11 +18,13 @@ import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
     return (
         <div>
             <Analytics />
+            <SpeedInsights />
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
