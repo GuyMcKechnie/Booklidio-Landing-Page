@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import GradeCollection from "./Pages/GradeCollection.jsx";
 import Product from "./Pages/Product.jsx";
@@ -17,7 +17,7 @@ import TOS from "./Pages/TOS.jsx";
 import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
-import { Analytics } from "@vercel/analytics/react";
+import Analytics from ""
 
 function App() {
     return (
