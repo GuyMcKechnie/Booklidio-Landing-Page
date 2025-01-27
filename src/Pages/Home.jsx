@@ -6,17 +6,24 @@ import Buy from "../Components/Home/Buy";
 import Sell from "../Components/Home/Sell";
 import FAQ from "../Components/Home/FAQ";
 import CTA from "../Components/Home/CTA";
+import AnimatedContent from "../Components/Utilities/AnimatedContent";
 
 const Home = () => {
+    const PageList = [
+        <Hero />,
+        <Features />,
+        <Buy />,
+        <Sell />,
+        <Testimonials />,
+        <FAQ className="bg-gray-100" />,
+    ];
+
     return (
         <div>
-            <Hero />
-            <Features />
-            <Buy />
-            <Sell />
-            <Testimonials />
-            <FAQ className="bg-gray-100" />
-            <CTA />
+            {PageList.map((page, index) => (
+                <AnimatedContent key={index}>{page}</AnimatedContent>
+            ))}
+            <CTA />,
         </div>
     );
 };

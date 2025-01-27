@@ -5,6 +5,7 @@ import SecondaryButton from "../Common/Buttons/SecondaryButton.jsx";
 import { CgShoppingCart } from "react-icons/cg";
 import { assets } from "../../Assets/Assets.js";
 import { RiBankCardLine } from "react-icons/ri";
+import AnimatedContent from "../Utilities/AnimatedContent.jsx";
 
 const SellFeature = (props) => {
     const { tagline, heading, description, image } = {

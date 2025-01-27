@@ -1,0 +1,21 @@
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.primary-button {
+    background-color: #680d28; /* Replace with your primary color */
+}
+
+.primary-button:hover {
+    background-image: linear-gradient(to right, #da5e5e, #680d28);
+    background-size: 300% 100%;
+    animation: gradient-move 4s ease infinite;
+}

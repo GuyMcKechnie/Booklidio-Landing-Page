@@ -1,7 +1,8 @@
 import React from "react";
-import { ImBooks } from "react-icons/im";
 import { FaMoneyCheck } from "react-icons/fa";
 import { GiBuyCard } from "react-icons/gi";
+import { ImBooks } from "react-icons/im";
+import AnimatedContent from "../Utilities/AnimatedContent";
 
 const Features = () => {
     const featuresList = [

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    Button,
     Accordion,
     AccordionContent,
     AccordionItem,
@@ -9,6 +8,7 @@ import {
 import { RxPlus } from "react-icons/rx";
 import { BiChevronRight } from "react-icons/bi";
 import SecondaryButton from "../Common/Buttons/SecondaryButton";
+import AnimatedContent from "../Utilities/AnimatedContent";
 
 const FAQ = (props) => {
     const { description, questions } = {

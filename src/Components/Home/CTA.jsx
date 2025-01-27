@@ -1,7 +1,8 @@
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
-import StarBorder from "../Common/StarBorder.jsx";
+import StarBorder from "../Common/Buttons/StarBorder.jsx";
 import { Link } from "react-router-dom";
+import AnimatedContent from "../Utilities/AnimatedContent.jsx";
 
 const CTADefaults = {
     heading: "What are you waiting for?",

@@ -4,6 +4,7 @@ import PrimaryButton from "../Common/Buttons/PrimaryButton.jsx";
 import SecondaryButton from "../Common/Buttons/SecondaryButton.jsx";
 import { CgShoppingCart } from "react-icons/cg";
 import { assets } from "../../Assets/Assets.js";
+import AnimatedContent from "../Utilities/AnimatedContent.jsx";
 
 const BuyFeature = (props) => {
     const { tagline, heading, description, image } = {

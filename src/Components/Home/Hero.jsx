@@ -3,17 +3,31 @@ import { CgShoppingCart } from "react-icons/cg";
 import { assets } from "../../Assets/Assets.js";
 import PrimaryButton from "../Common/Buttons/PrimaryButton.jsx";
 import SecondaryButton from "../Common/Buttons/SecondaryButton.jsx";
+import GradientText from "../Utilities/GradientText.jsx";
 
 const Hero = () => {
     return (
         <section className="px-[5%] pt-18">
             <div className="py-18 lg:py-12">
-                <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
+                <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
                     <div className="mb-12 text-center md-18 lg:mb-20 lg:items-start">
                         <div className="w-full max-w-lg text-left">
                             <h1 className="mb-5 font-bold text-7xl text-text font-heading md:mb-6 md:text-9xl lg:text-10xl">
                                 Buying & Selling Textbooks Made{" "}
-                                <span className="text-primary">Easy</span>
+                                <GradientText
+                                    colors={[
+                                        "#680d28",
+                                        "#da5e5e",
+                                        "#5e0b22",
+                                        "#780e2a",
+                                        "#600c26",
+                                    ]}
+                                    animationSpeed={3}
+                                    showBorder={false}
+                                    className="custom-class"
+                                >
+                                    Easy
+                                </GradientText>
                             </h1>
                             <p className="md:text-md font-body">
                                 Thousands of parents, students, and educators
