@@ -2,12 +2,11 @@ import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 import StarBorder from "../Common/Buttons/StarBorder.jsx";
 import { Link } from "react-router-dom";
-import AnimatedContent from "../Utilities/AnimatedContent.jsx";
 
 const CTADefaults = {
-    heading: "What are you waiting for?",
+    heading: "What wait?",
     description:
-        "Don't miss out on the thousands of savings you could be making.",
+        "Stop missing out on the thousands of savings you could be making.",
 };
 
 const CTA = (props) => {
