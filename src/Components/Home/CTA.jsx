@@ -4,7 +4,7 @@ import StarBorder from "../Common/Buttons/StarBorder.jsx";
 import { Link } from "react-router-dom";
 
 const CTADefaults = {
-    heading: "What wait?",
+    heading: "Why wait?",
     description:
         "Stop missing out on the thousands of savings you could be making.",
 };
