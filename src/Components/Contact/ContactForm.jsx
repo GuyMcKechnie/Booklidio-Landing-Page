@@ -99,7 +99,7 @@ const ContactForm = () => {
                             id="acceptTerms"
                             checked={acceptTerms}
                             onChange={(e) =>
-                                setMarketingConsent(e.target.checked)
+                                setAcceptTerms(e.target.checked)
                             }
                             className="mr-2"
                         />
