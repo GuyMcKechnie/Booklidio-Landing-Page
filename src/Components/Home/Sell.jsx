@@ -38,7 +38,8 @@ const SellFeature = (props) => {
                                 <PrimaryButton
                                     title={"Sell"}
                                     icon={<RiBankCardLine />}
-                                    link={"/shop"}
+                                    // link={"/shop"}
+                                    link={"/contact"}
                                 ></PrimaryButton>
                                 <SecondaryButton
                                     title={"Find Out More"}

@@ -24,7 +24,8 @@ const CTA = (props) => {
                 <div className="flex items-center justify-center gap-4 mt-6 md:mt-8">
                     <StarBorder className="transition-all custom-class hover:scale-110">
                         <Link
-                            to="/shop"
+                            // to="/shop"
+                            to="/contact"
                             className="flex items-center justify-center gap-2 text-white transition-all rounded-lg group w-fit"
                         >
                             <span className="text-lg uppercase">

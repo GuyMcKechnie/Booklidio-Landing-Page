@@ -30,7 +30,8 @@ const BuyFeature = (props) => {
                             <PrimaryButton
                                 title={"Buy"}
                                 icon={<CgShoppingCart />}
-                                link={"/shop"}
+                                // link={"/shop"}
+                                link={"/contact"}
                             ></PrimaryButton>
                             <SecondaryButton
                                 title={"Find Out More"}
