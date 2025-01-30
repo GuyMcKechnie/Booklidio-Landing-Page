@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { motion } from "framer-motion";
+import { LoadingAnimation } from "./Components/Utilities/LoadingAnimation.jsx";
+// Component Imports
 import Home from "./Pages/Home.jsx";
 import GradeCollection from "./Pages/GradeCollection.jsx";
 import Product from "./Pages/Product.jsx";
@@ -18,16 +23,17 @@ import TOS from "./Pages/TOS.jsx";
 import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { motion } from "framer-motion";
-import { LoadingAnimation } from "./Components/Utilities/LoadingAnimation.jsx";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
-    setTimeout(() => {
-        setIsLoading(false);
-    }, 2000);
+    const location = useLocation();
+    useEffect(() => {
+        setIsLoading(true);
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [location]);
     return (
         <>
             {isLoading ? (
@@ -53,10 +59,7 @@ function App() {
                             path="/product/:productId"
                             element={<Product />}
                         />
-                        <Route path="/cart" element={<Cart />} />
                         <Route path="/register" element={<Register />} />
-                        <Route path="/place-order" element={<PlaceOrder />} />
-                        <Route path="/orders" element={<Orders />} />
                         <Route
                             path="/privacy-policy"
                             element={<PrivacyPolicy />}

@@ -108,7 +108,7 @@ const Navbar = (props) => {
                             )}
                         </div>
                     ))}
-                    <Link
+                    {/* <Link
                         to={"/cart"}
                         className="hidden p-3 text-lg text-white transition-colors duration-300 rounded-full lg:flex group bg-primary hover:bg-accent "
                     >
@@ -116,7 +116,7 @@ const Navbar = (props) => {
                             className="transition-transform group-hover:scale-110"
                             size={24}
                         />
-                    </Link>
+                    </Link> */}
                 </motion.div>
             </div>
         </nav>
@@ -198,40 +198,40 @@ const SubMenu = ({ navLink, isMobile }) => {
 
 export const NavbarDefaults = {
     navLinks: [
-        {
-            title: "Collections",
-            subMenuLinks: [
-                {
-                    title: "Grade",
-                    url: "/grades",
-                    component: <BiPencil />,
-                },
-                {
-                    title: "Subject",
-                    url: "/subjects",
-                    component: <BiCalculator />,
-                },
-            ],
-        },
-        { title: "About Us", url: "/about-us" },
+        // {
+        //     title: "Collections",
+        //     subMenuLinks: [
+        //         {
+        //             title: "Grade",
+        //             url: "/grades",
+        //             component: <BiPencil />,
+        //         },
+        //         {
+        //             title: "Subject",
+        //             url: "/subjects",
+        //             component: <BiCalculator />,
+        //         },
+        //     ],
+        // },
+        // { title: "About Us", url: "/about-us" },
         { title: "Contact", url: "/contact" },
-        {
-            title: "My Account",
-            subMenuLinks: [
-                { title: "Orders", url: "/orders", component: <BiReceipt /> },
-                { title: "Cart", url: "/cart", component: <CgShoppingCart /> },
-                {
-                    title: "Invoices",
-                    url: "/invoices",
-                    component: <TbInvoice />,
-                },
-                {
-                    title: "Logout",
-                    url: "/logout",
-                    component: <LuLogOut />,
-                },
-            ],
-        },
+        // {
+        //     title: "My Account",
+        //     subMenuLinks: [
+        //         { title: "Orders", url: "/orders", component: <BiReceipt /> },
+        //         { title: "Cart", url: "/cart", component: <CgShoppingCart /> },
+        //         {
+        //             title: "Invoices",
+        //             url: "/invoices",
+        //             component: <TbInvoice />,
+        //         },
+        //         {
+        //             title: "Logout",
+        //             url: "/logout",
+        //             component: <LuLogOut />,
+        //         },
+        //     ],
+        // },
     ],
 };
 

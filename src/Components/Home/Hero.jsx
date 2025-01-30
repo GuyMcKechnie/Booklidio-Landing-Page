@@ -39,12 +39,14 @@ const Hero = () => {
                                 <PrimaryButton
                                     title={"Buy"}
                                     icon={<CgShoppingCart />}
-                                    link={"/shop"}
+                                    // link={"/shop"}
+                                    link={"/contact"}
                                 ></PrimaryButton>
                                 <SecondaryButton
                                     title={"Sell"}
                                     icon={<BiBookOpen />}
-                                    link={"/shop"}
+                                    // link={"/shop"}
+                                    link={"/contact"}
                                 ></SecondaryButton>
                             </div>
                         </div>

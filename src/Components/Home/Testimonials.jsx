@@ -20,7 +20,7 @@ const Testimonials = (props) => {
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-start justify-between w-full p-6 md:p-8"
+                            className="flex flex-col items-start justify-start w-full p-6 md:p-8"
                         >
                             <div className="flex items-center w-full gap-4 mb-4 md:w-fit">
                                 <p className="text-lg font-semibold font-heading text-nowrap">
@@ -51,19 +51,19 @@ const Testimonials = (props) => {
 export const TestimonialDefaults = {
     testimonials: [
         {
-            quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
+            quote: "Booklidio has been a life saver! The amount of money that I've gotten back from selling my old textbooks is crazy. The process is simple and you get paid quickly.",
             name: "Themba Molefe",
             information: "30+ Textbooks Sold",
             numberOfStars: 5,
         },
         {
-            quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
+            quote: "I've bought countless textbooks using Booklidio and the service never disappoints. The textbooks are always of good quality and the savings are unbelievable.",
             name: "Roshaan Naidoo",
             information: "R2,100+ Saved",
             numberOfStars: 4,
         },
         {
-            quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
+            quote: "I have been using Booklidio since the beginning and I have never had an issue with their service delivery. They are faster than most other textbook retailers.",
             name: "Siyabonga Mkhize",
             information: "3 Year Customer",
             numberOfStars: 5,
