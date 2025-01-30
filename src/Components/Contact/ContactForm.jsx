@@ -98,9 +98,7 @@ const ContactForm = () => {
                             type="checkbox"
                             id="acceptTerms"
                             checked={acceptTerms}
-                            onChange={(e) =>
-                                setAcceptTerms(e.target.checked)
-                            }
+                            onChange={(e) => setAcceptTerms(e.target.checked)}
                             className="mr-2"
                         />
                         <label htmlFor="acceptTerms" className="text-text">
