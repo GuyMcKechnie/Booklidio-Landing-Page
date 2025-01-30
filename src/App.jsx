@@ -23,10 +23,6 @@ import TOS from "./Pages/TOS.jsx";
 import ReturnsPolicy from "./Pages/ReturnsPolicy.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { motion } from "framer-motion";
-import { LoadingAnimation } from "./Components/Utilities/LoadingAnimation.jsx";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
