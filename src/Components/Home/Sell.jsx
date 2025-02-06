@@ -27,7 +27,7 @@ const SellFeature = (props) => {
                         <p className="mb-3 font-semibold uppercase md:mb-4 font-heading opacity-70">
                             {tagline}
                         </p>
-                        <h1 className="mb-5 text-2xl font-bold rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
+                        <h1 className="mb-5 text-2xl font-bold rb-5 md:mb-6 md:text-5xl font-heading">
                             {heading}
                         </h1>
                         <p className="md:text-md font-body text-text">

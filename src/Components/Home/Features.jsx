@@ -29,7 +29,7 @@ const Features = () => {
     return (
         <section
             id="features"
-            className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100"
+            className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100 h-screen flex items-center justify-center"
         >
             <div className="container">
                 <h3 className="mb-12 text-3xl font-bold text-text font-heading">
@@ -44,11 +44,11 @@ const Features = () => {
                                 <div className="p-3 text-6xl text-white rounded-full bg-primary">
                                     {feature.icon}
                                 </div>
-                                <h4 className="text-xl font-bold font-heading text-text">
+                                <h4 className="text-xl font-bold font-heading">
                                     {feature.heading}
                                 </h4>
                             </div>
-                            <p className="text-base font-body text-text">
+                            <p className="text-base font-body">
                                 {feature.description}
                             </p>
                         </div>

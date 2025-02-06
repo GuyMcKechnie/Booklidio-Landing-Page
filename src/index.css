@@ -1,40 +1,129 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@theme {
+    --color-gray: #363636;
+    --color-primary: #680d28;
+    --color-secondary: #f26e6e;
+    --color-accent: #da5e5e;
+    --font-heading: "Barlow Condensed", sans-serif;
+    --font-body: "Montserrat", sans-serif;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+/* Custom classes, styles and keyframes */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.max-h-screen {
-    transition: max-height 0.3s ease-in-out;
+@keyframes star-movement-bottom {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100%, 0%);
+        opacity: 0;
+    }
 }
 
-.max-h-0 {
-    transition: max-height 0.3s ease-in-out;
-    overflow: hidden;
+@keyframes star-movement-top {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100%, 0%);
+        opacity: 0;
+    }
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cta-section {
+    background-image: linear-gradient(to right, #680712, #680d28);
+    background-size: 100% 100%;
+    animation: gradient-move 6s ease infinite;
+}
+
+.animated-gradient {
+    animation: gradient 8s linear infinite;
+}
+
+.animate-star-movement-bottom {
+    animation: star-movement-bottom 3s linear infinite alternate;
+}
+
+.animate-star-movement-top {
+    animation: star-movement-top 3s linear infinite alternate;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: Barlow Condensed;
+    font-family: "Barlow Condensed", sans-serif;
     color: #363636;
 }
 
 p,
 li {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     color: #363636;
+}
+
+.font-size-xs {
+    font-size: 0.55rem;
+}
+
+.font-size-sm {
+    font-size: 0.75rem;
+}
+
+.font-size-base {
+    font-size: 1rem;
+}
+
+.font-size-xl {
+    font-size: 1.333rem;
+}
+
+.font-size-2xl {
+    font-size: 1.777rem;
+}
+
+.font-size-3xl {
+    font-size: 2.369rem;
+}
+
+.font-size-4xl {
+    font-size: 3.158rem;
+}
+
+.font-size-5xl {
+    font-size: 4.21rem;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-weight-bold {
+    font-weight: 700;
 }

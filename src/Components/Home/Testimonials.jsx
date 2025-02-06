@@ -8,8 +8,8 @@ const Testimonials = (props) => {
     return (
         <section className="px-[5%] py-20 md:py-28 lg:py-32">
             <div className="container">
-                <div className="w-full max-w-lg mx-auto mb-12 text-center md:mb-18 lg:mb-20 text-text">
-                    <h1 className="mb-5 text-2xl font-bold md:mb-6 md:text-7xl lg:text-8xl font-heading">
+                <div className="w-full mx-auto mb-12 text-center md:mb-18 lg:mb-20 text-text">
+                    <h1 className="mb-5 text-2xl font-bold rb-5 md:mb-6 md:text-5xl font-heading">
                         Find Out What Our Customers Say
                     </h1>
                     <p className="md:text-md font-body">
