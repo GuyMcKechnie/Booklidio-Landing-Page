@@ -29,7 +29,7 @@ const Features = () => {
     return (
         <section
             id="features"
-            className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100"
+            className="px-[5%] py-16 md:py-24 lg:py-28 bg-gray-100 h-screen flex items-center justify-center"
         >
             <div className="container">
                 <h3 className="mb-12 text-3xl font-bold text-text font-heading">

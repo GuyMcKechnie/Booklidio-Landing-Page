@@ -12,7 +12,7 @@ const Hero = () => {
                 <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
                     <div className="mb-12 text-center md-18 lg:mb-20 lg:items-start">
                         <div className="w-full max-w-lg text-left">
-                            <h1 className="mb-5 font-bold text-7xl text-text font-heading md:mb-6 md:text-9xl lg:text-10xl">
+                            <h1 className="mb-5 font-bold text-7xl text-text font-heading md:mb-6">
                                 Buying & Selling Textbooks Made{" "}
                                 <GradientText
                                     colors={[
@@ -24,7 +24,7 @@ const Hero = () => {
                                     ]}
                                     animationSpeed={3}
                                     showBorder={false}
-                                    className="custom-class"
+                                    className="gradient"
                                 >
                                     Easy
                                 </GradientText>

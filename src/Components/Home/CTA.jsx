@@ -17,7 +17,8 @@ const CTA = (props) => {
     };
     return (
         <section className="px-[5%] py-16 md:py-24 lg:py-28 bg-gradient-to-b from-primary to-[#560b22]">
-            <div className="container max-w-lg text-center">
+            <div className="container relative max-w-lg text-center">
+                <span className="absolute top-0 right-0 z-10 rounded-full w-100 h-100 bg-accent"></span>
                 <h2 className="mb-5 text-5xl font-bold text-white rb-5 md:mb-6 md:text-7xl lg:text-8xl font-heading">
                     {heading}
                 </h2>
