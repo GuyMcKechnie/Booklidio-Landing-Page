@@ -44,11 +44,11 @@ const Features = () => {
                                 <div className="p-3 text-6xl text-white rounded-full bg-primary">
                                     {feature.icon}
                                 </div>
-                                <h4 className="text-xl font-bold font-heading text-text">
+                                <h4 className="text-xl font-bold font-heading">
                                     {feature.heading}
                                 </h4>
                             </div>
-                            <p className="text-base font-body text-text">
+                            <p className="text-base font-body">
                                 {feature.description}
                             </p>
                         </div>

@@ -47,7 +47,7 @@ function App() {
                 >
                     <Analytics />
                     <SpeedInsights />
-                    <Header />
+                    {/* <Header /> */}
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/grades" element={<GradeCollection />} />

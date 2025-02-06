@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
-/* Custom styles and keyframes */
+@theme {
+    --color-gray: #363636;
+    --color-primary: #680d28;
+    --color-secondary: #f26e6e;
+    --color-accent: #da5e5e;
+    --font-heading: "Barlow Condensed", sans-serif;
+    --font-body: "Montserrat", sans-serif;
+}
+
+/* Custom classes, styles and keyframes */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -35,6 +44,36 @@
     }
 }
 
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cta-section {
+    background-image: linear-gradient(to right, #680712, #680d28);
+    background-size: 100% 100%;
+    animation: gradient-move 6s ease infinite;
+}
+
+.animated-gradient {
+    animation: gradient 8s linear infinite;
+}
+
+.animate-star-movement-bottom {
+    animation: star-movement-bottom 3s linear infinite alternate;
+}
+
+.animate-star-movement-top {
+    animation: star-movement-top 3s linear infinite alternate;
+}
+
 h1,
 h2,
 h3,
@@ -47,35 +86,6 @@ p,
 li {
     font-family: "Montserrat", sans-serif;
     color: #363636;
-}
-
-/* Custom utility classes */
-.text {
-    color: #363636;
-}
-
-.background {
-    background-color: #fbfbfe;
-}
-
-.primary {
-    background-color: #680d28;
-}
-
-.secondary {
-    background-color: #f26e6e;
-}
-
-.accent {
-    background-color: #da5e5e;
-}
-
-.font-heading {
-    font-family: "Barlow Condensed", sans-serif;
-}
-
-.font-body {
-    font-family: "Montserrat", sans-serif;
 }
 
 .font-size-xs {
@@ -116,17 +126,4 @@ li {
 
 .font-weight-bold {
     font-weight: 700;
-}
-
-/* Animation classes */
-.animate-gradient {
-    animation: gradient 8s linear infinite;
-}
-
-.star-movement-bottom {
-    animation: star-movement-bottom linear infinite alternate;
-}
-
-.star-movement-top {
-    animation: star-movement-top linear infinite alternate;
 }
