@@ -3,16 +3,15 @@ import { CgShoppingCart } from "react-icons/cg";
 import { assets } from "../../Assets/Assets.js";
 import PrimaryButton from "../Common/Buttons/PrimaryButton.jsx";
 import SecondaryButton from "../Common/Buttons/SecondaryButton.jsx";
-import GradientText from "../Utilities/GradientText.jsx";
 
 const Hero = () => {
     return (
-        <section className="px-[5%] pt-18">
+        <section className="px-[5%] pt-24 h-screen">
             <div className="py-18 lg:py-12">
                 <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
                     <div className="mb-12 text-center md-18 lg:mb-20 lg:items-start">
                         <div className="w-full max-w-lg text-left">
-                            <h1 className="mb-5 font-bold text-left text-7xl font-heading md:mb-6">
+                            <h1 className="mb-5 font-bold text-left text-5xl font-heading md:mb-6">
                                 Buying & Selling Textbooks Made Easy
                             </h1>
                             <p className="md:text-md font-body">

@@ -120,10 +120,10 @@ export const FooterDefaults = {
             title: "For You",
             links: [
                 { title: "FAQ", url: "/faq" },
-                { title: "Trading Process", url: "/trading-process" },
-                { title: "Shipping Information", url: "/shipping-information" },
-                { title: "Orders", url: "/orders" },
-                { title: "Account", url: "/account" },
+                // { title: "Trading Process", url: "/trading-process" },
+                // { title: "Shipping Information", url: "/shipping-information" },
+                // { title: "Orders", url: "/orders" },
+                // { title: "Account", url: "/account" },
             ],
         },
         {
@@ -132,8 +132,8 @@ export const FooterDefaults = {
                 { title: "Privacy Policy", url: "/privacy-policy" },
                 { title: "Terms of Service", url: "/terms-of-service" },
                 { title: "Returns Policy", url: "/returns-policy" },
-                { title: "Cookies Settings", url: "/cookies-settings" },
-                { title: "Our Company", url: "/about-us" },
+                // { title: "Cookies Settings", url: "/cookies-settings" },
+                // { title: "Our Company", url: "/about-us" },
             ],
         },
         {
