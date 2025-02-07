@@ -34,7 +34,7 @@ const SellFeature = () => {
             ></SecondaryButton>
           </div>
         </div>
-        <img src={assets.sell} className="md:max-w-sm" />
+        <img src={assets.sell} className="home-image" />
       </div>
     </section>
   );

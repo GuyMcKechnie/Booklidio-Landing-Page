@@ -9,6 +9,7 @@ const BuyFeature = () => {
   return (
     <section className="section-container bg-gray-100">
       <div className="container">
+        <img src={assets.buy} className="home-image scale-x-[-1]" />
         <div className="text-container">
           <h2>BUYING BUT BETTER</h2>
           <h1>Booklidio Makes Buying Textbooks a Breeze</h1>
@@ -32,7 +33,6 @@ const BuyFeature = () => {
             ></SecondaryButton>
           </div>
         </div>
-        <img src={assets.buy} className="md:max-w-sm" />
       </div>
     </section>
   );

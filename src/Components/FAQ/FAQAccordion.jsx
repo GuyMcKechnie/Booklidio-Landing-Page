@@ -17,18 +17,20 @@ function FAQAccordion() {
         <AccordionItem
           key={index}
           value={`item-${index}`}
-          className="group border-gray hover:border-accent rounded-lg border-2 px-5 transition-all md:px-6"
+          className="group border-gray hover:border-accent cursor-pointer rounded-lg border-2 px-5 transition-all md:px-6"
         >
           <AccordionTrigger
             icon={
               <RxPlus className="text-gray group-hover:text-accent size-7 shrink-0 transition-transform duration-300 md:size-8" />
             }
-            className="md:text-md text-gray group-hover:text-accent md:py-5 [&[data-state=open]>svg]:rotate-45"
+            className="md:text-md cursor-pointer transition-transform duration-300 md:py-5 [&[data-state=open]>svg]:rotate-45"
           >
-            <h3 className="!text-left !opacity-100">{question.question}</h3>
+            <h3 className="group-hover:!text-accent !text-left !opacity-100 transition-transform duration-300">
+              {question.question}
+            </h3>
           </AccordionTrigger>
-          <AccordionContent className="text-gray font-body text-balance md:pb-6">
-            {question.answer}
+          <AccordionContent className="group-hover:!text-accent !text-left transition-transform duration-300 md:pb-6">
+            <p>{question.answer}</p>
           </AccordionContent>
         </AccordionItem>
       ))}

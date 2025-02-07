@@ -108,6 +108,9 @@ h1 {
   color: var(--color-gray);
   font-weight: var(--font-weight-bold);
   text-wrap: balance;
+  @media (width >= 64rem) {
+    font-size: var(--text-7xl);
+  }
 }
 
 h2 {
@@ -119,6 +122,9 @@ h2 {
   text-wrap: balance;
   text-transform: uppercase;
   opacity: 70%;
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+  }
 }
 
 h3 {
@@ -140,6 +146,9 @@ p {
   @media (width >= 48rem) {
     font-size: var(--text-medium);
   }
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+  }
 }
 
 .doodle {
@@ -148,6 +157,15 @@ p {
   position: absolute;
   @media (width >= 64rem) {
     display: block;
+  }
+}
+
+.home-image {
+  @media (width >= 48rem) {
+    max-width: var(--container-sm);
+  }
+  @media (width >= 64rem) {
+    max-width: var(--container-2xl);
   }
 }
 

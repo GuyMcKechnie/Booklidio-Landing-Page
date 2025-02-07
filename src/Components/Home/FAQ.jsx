@@ -7,7 +7,7 @@ const FAQ = () => {
   return (
     <section className="section-container bg-gray-100">
       <div className="container md:!flex-col">
-        <div className="text-container">
+        <div className="text-container !text-center">
           <h1>Got a Question?</h1>
           <p>
             Use the following frequently asked questions to find answers to

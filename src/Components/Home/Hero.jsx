@@ -7,7 +7,7 @@ import SecondaryButton from "../Common/Buttons/SecondaryButton.jsx";
 const Hero = () => {
   return (
     <section className="section-container">
-      <div className="container pt-18">
+      <div className="container">
         <div className="text-container">
           <h1>Buying & Selling Textbooks Made Easy</h1>
           <p className="md:text-md">
@@ -30,7 +30,7 @@ const Hero = () => {
             ></SecondaryButton>
           </div>
         </div>
-        <img src={assets.hero} className="md:max-w-sm" />
+        <img src={assets.hero} className="home-image" />
       </div>
     </section>
   );
