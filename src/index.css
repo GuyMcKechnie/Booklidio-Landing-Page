@@ -4,129 +4,213 @@
 @source "../node_modules/flowbite";
 
 @theme {
-    --color-gray: #363636;
-    --color-primary: #680d28;
-    --color-secondary: #f26e6e;
-    --color-accent: #da5e5e;
-    --font-heading: "Barlow Condensed", sans-serif;
-    --font-body: "Montserrat", sans-serif;
+  --color-gray: #363636;
+  --color-primary: #680d28;
+  --color-secondary: #f26e6e;
+  --color-accent: #da5e5e;
+  --font-heading: "Barlow Condensed", sans-serif;
+  --font-body: "Montserrat", sans-serif;
 }
 
 /* Custom classes, styles and keyframes */
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes star-movement-bottom {
-    0% {
-        transform: translate(0%, 0%);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-100%, 0%);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, 0%);
+    opacity: 0;
+  }
 }
 
 @keyframes star-movement-top {
-    0% {
-        transform: translate(0%, 0%);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(100%, 0%);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 0%);
+    opacity: 0;
+  }
 }
 
 @keyframes gradient-move {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-container {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (width >= 48rem) {
+    flex-direction: row;
+  }
 }
 
 .cta-section {
-    background-image: linear-gradient(to right, #680712, #680d28);
-    background-size: 100% 100%;
-    animation: gradient-move 6s ease infinite;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #680712, #2b0310);
+  background-size: 300% 100%;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  font-family: var(--font-heading);
+  color: var(--color-gray);
+  font-weight: var(--font-weight-bold);
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  font-family: var(--font-heading);
+  color: var(--color-gray);
+  font-weight: var(--font-weight-light);
+  text-wrap: balance;
+  text-transform: uppercase;
+  opacity: 70%;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  font-family: var(--font-heading);
+  color: var(--color-gray);
+  font-weight: var(--font-weight-medium);
+  text-wrap: balance;
+  opacity: 80%;
+}
+
+p {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  font-family: var(--font-body);
+  color: var(--color-gray);
+  text-wrap: balance;
+  @media (width >= 48rem) {
+    font-size: var(--text-medium);
+  }
+}
+
+.doodle {
+  display: none;
+  color: var(--color-primary);
+  position: absolute;
+  @media (width >= 64rem) {
+    display: block;
+  }
 }
 
 .animated-gradient {
-    animation: gradient 8s linear infinite;
+  animation: gradient 8s linear infinite;
 }
 
 .animate-star-movement-bottom {
-    animation: star-movement-bottom 3s linear infinite alternate;
+  animation: star-movement-bottom 3s linear infinite alternate;
 }
 
 .animate-star-movement-top {
-    animation: star-movement-top 3s linear infinite alternate;
+  animation: star-movement-top 3s linear infinite alternate;
 }
 
-h1,
 h2,
-h3,
 h4 {
-    font-family: "Barlow Condensed", sans-serif;
-    color: #363636;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #363636;
 }
 
 p,
 li {
-    font-family: "Montserrat", sans-serif;
-    color: #363636;
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
 }
 
 .font-size-xs {
-    font-size: 0.55rem;
+  font-size: 0.55rem;
 }
 
 .font-size-sm {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .font-size-base {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .font-size-xl {
-    font-size: 1.333rem;
+  font-size: 1.333rem;
 }
 
 .font-size-2xl {
-    font-size: 1.777rem;
+  font-size: 1.777rem;
 }
 
 .font-size-3xl {
-    font-size: 2.369rem;
+  font-size: 2.369rem;
 }
 
 .font-size-4xl {
-    font-size: 3.158rem;
+  font-size: 3.158rem;
 }
 
 .font-size-5xl {
-    font-size: 4.21rem;
+  font-size: 4.21rem;
 }
 
 .font-weight-normal {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .font-weight-bold {
-    font-weight: 700;
+  font-weight: 700;
 }

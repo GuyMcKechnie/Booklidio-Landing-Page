@@ -11,8 +11,8 @@ import AnimatedContent from "../Components/Utilities/AnimatedContent";
 const Home = () => {
     const PageList = [
         <Hero />,
-        <Features />,
         <Buy />,
+        <Features />,
         <Sell />,
         <Testimonials />,
         <FAQ className="bg-gray-100" />,
