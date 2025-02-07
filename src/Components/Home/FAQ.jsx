@@ -9,6 +9,8 @@ import { RxPlus } from "react-icons/rx";
 import { BiChevronRight } from "react-icons/bi";
 import SecondaryButton from "../Common/Buttons/SecondaryButton";
 import AnimatedContent from "../Utilities/AnimatedContent";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const FAQ = (props) => {
     const { description, questions } = {
@@ -24,25 +26,18 @@ const FAQ = (props) => {
 
     return (
         <section className="px-[5%] py-16 md:py-24 lg:py-28 relative bg-gray-100 z-20">
-            <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
-                <div>
+            <div className="container flex flex-col text-center">
+                <div className="text-center flex flex-col items-center justify-center mb-6">
                     <h2 className="mb-5 text-2xl font-bold rb-5 md:mb-6 md:text-5xl font-heading">
                         Got a Question?
                     </h2>
-                    <p className="text-text md:text-md font-body">
+                    <p className="text-text md:text-md font-body max-w-lg">
                         {description}
                     </p>
-                    <div className="mt-6 md:mt-8">
-                        <SecondaryButton
-                            title={buttonVariables.title}
-                            icon={buttonVariables.icon}
-                            link={buttonVariables.link}
-                        />
-                    </div>
                 </div>
                 <Accordion
                     type="multiple"
-                    className="grid items-start gap-4 transition-all justify-stretch"
+                    className="grid grid-cols-2 items-start gap-4 transition-all justify-stretch"
                 >
                     {questions.map((question, index) => (
                         <AccordionItem
@@ -64,6 +59,18 @@ const FAQ = (props) => {
                         </AccordionItem>
                     ))}
                 </Accordion>
+                <div className="mt-6 md:mt-8 flex gap-2">
+                    <p>
+                        Couldn't find what you were looking for? Reach out and
+                        we'll be in contact soon!
+                    </p>
+                    <Link
+                        to="/contact"
+                        className="underline text-gray font-body font-bold cursor-pointer"
+                    >
+                        Contact Us
+                    </Link>
+                </div>
             </div>
         </section>
     );

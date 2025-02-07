@@ -21,7 +21,7 @@ const Navbar = (props) => {
     const isMobile = useMediaQuery("(max-width: 991px)");
 
     return (
-        <nav className="fixed z-50 flex items-center w-full h-20 bg-white shadow-lg lg:px-8">
+        <nav className="fixed z-50 flex items-center w-full h-18 bg-white shadow-lg lg:px-8">
             <div className="justify-between size-full lg:flex lg:items-center">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <Link
@@ -214,7 +214,7 @@ export const NavbarDefaults = {
         //     ],
         // },
         // { title: "About Us", url: "/about-us" },
-        { title: "Contact", url: "/contact" },
+        // { title: "Contact", url: "/contact" },
         // {
         //     title: "My Account",
         //     subMenuLinks: [

@@ -56,7 +56,7 @@ const LayoutDefaults = {
     tagline: "Buying but Better",
     heading: "Booklidio Makes Buying Textbooks a Breeze",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+        "Buy textbooks effortlessly with our easy-to-use marketplace. Browse a wide range of quality, affordable textbooks for your courses. Save time and money by finding the best deals, all in one place. Start shopping today!",
     image: {
         src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
         alt: "Relume placeholder image",

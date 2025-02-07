@@ -59,7 +59,7 @@ const Layout192Defaults = {
     tagline: "Selling Made Easy",
     heading: "Make Money Selling Textbooks with Booklidio",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+        "Sell your used textbooks hassle-free on our marketplace. Reach a wide audience, get competitive offers, and earn money for books you no longer need. Start selling today and declutter your shelves while making a profit!",
     image: {
         src: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
         alt: "Relume placeholder image",
