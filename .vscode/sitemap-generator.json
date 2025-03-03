@@ -1,0 +1,17 @@
+{
+  "sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "booklidio.com",
+    "Root": "./",
+    "IncludeExt": [".html", ".php"],
+    "Exclude": ["https://www.booklidio.com/node_modules/"],
+    "TagsToInclude": ["priority", "lastmod"],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": true,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": false,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  }
+}
