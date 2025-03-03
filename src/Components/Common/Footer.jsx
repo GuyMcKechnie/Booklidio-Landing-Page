@@ -21,7 +21,7 @@ const Footer = () => {
             <h1 className="!text-primary">Booklidio</h1>
           </Link>
           <p className="mt-3 mb-6">
-            Join our newsletter to recieve updates on new books and promotions.
+            Join our newsletter to receive updates on new books and promotions.
           </p>
           <div className="w-full max-w-md">
             <form
@@ -46,9 +46,9 @@ const Footer = () => {
             <div>
               <p className="!text-xs">
                 By subscribing you agree to with our{" "}
-                <a href="/privacy-policy" className="underline">
+                <Link to={"/privacy-policy"} className="underline">
                   Privacy Policy
-                </a>{" "}
+                </Link>
                 and provide consent to receive updates from Booklidio.
               </p>
             </div>
@@ -66,10 +66,10 @@ const Footer = () => {
               <ul>
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex} className="font-body py-2 text-sm">
-                    <a href={link.url} className="flex items-center gap-3">
+                    <Link to={link.url} className="flex items-center gap-3">
                       {link.icon && <span>{link.icon}</span>}
                       <span>{link.title}</span>
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -80,7 +80,7 @@ const Footer = () => {
       <div className="bg-gray h-px w-full" />
       <div className="font-body flex flex-col-reverse items-start justify-between pt-6 pb-4 text-sm md:flex-row md:items-center md:pt-8 md:pb-0">
         <p className="mt-6 text-center md:mt-0">
-          Copyright 2025 Booklidio. All rights reserved.{" "}
+          Copyright 2025 Booklidio. All rights reserved.
         </p>
       </div>
     </footer>
